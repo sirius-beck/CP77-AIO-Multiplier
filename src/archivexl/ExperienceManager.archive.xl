@@ -1,0 +1,19 @@
+localization:
+  onscreens:
+    en-us: base\ExperienceManager\localization\en-us.json
+    pt-br: base\ExperienceManager\localization\pt-br.json
+    pl-pl: base\ExperienceManager\localization\en-us.json
+    ru-ru: base\ExperienceManager\localization\en-us.json
+    es-es: base\ExperienceManager\localization\en-us.json
+    jp-jp: base\ExperienceManager\localization\en-us.json
+    fr-fr: base\ExperienceManager\localization\en-us.json
+    zh-tw: base\ExperienceManager\localization\en-us.json
+    it-it: base\ExperienceManager\localization\en-us.json
+    ar-ar: base\ExperienceManager\localization\en-us.json
+    de-de: base\ExperienceManager\localization\en-us.json
+    cz-cz: base\ExperienceManager\localization\en-us.json
+    es-mx: base\ExperienceManager\localization\en-us.json
+    hu-hu: base\ExperienceManager\localization\en-us.json
+    kr-kr: base\ExperienceManager\localization\en-us.json
+    tr-tr: base\ExperienceManager\localization\en-us.json
+    zh-cn: base\ExperienceManager\localization\en-us.json
