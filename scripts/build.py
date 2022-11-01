@@ -1,10 +1,12 @@
 import json
 from os import path, system
 
+system('@echo off')
 system('cls')
 
 class build():
     def __init__(self) -> None:
+        self.bundleFile = 'X:\\Cyberpunk 2077\\r6\\cache\\modded\\final.redscripts'
         self.name = ''
         self.version = ''
         self.isRedmod = ''
@@ -34,27 +36,27 @@ class build():
             if key == 'isRedmod':
                 return isRedmod
         else:
-            self.name = input('Mod name: ')
+            self.name = input('>> Mod name: ')
             while self.name == '':
                 system('cls')
-                self.name = input('Mod version (ex: 1.0.0): ')
+                self.name = input('>> Mod version (ex: 1.0.0): ')
 
-            self.version = input('Mod version (ex: 1.0.0): ')
+            self.version = input('>> Mod version (ex: 1.0.0): ')
             while self.version == '':
                 system('cls')
-                print(f'Mod name: {self.name}')
-                self.version = input('Mod version (ex: 1.0.0): ')
+                print(f'>> Mod name: {self.name}')
+                self.version = input('>> Mod version (ex: 1.0.0): ')
 
-            self.isRedmod = input('Build for REDmod? [y]es / [n]o: ')
+            self.isRedmod = input('>> Build for REDmod? [y]es / [n]o: ')
             if self.isRedmod == '':
                 self.isRedmod = 'a'
             self.isRedmod = self.isRedmod[0].capitalize()
 
             while self.isRedmod != 'Y' and self.isRedmod != 'N':
                 system('cls')
-                print(f'Mod name: {self.name}')
-                print(f'Mod version (ex: 1.0.0): {self.version}')
-                self.isRedmod = input('Build for REDmod? [y]es / [n]o: ')
+                print(f'>> Mod name: {self.name}')
+                print(f'>> Mod version (ex: 1.0.0): {self.version}')
+                self.isRedmod = input('>> Build for REDmod? [y]es / [n]o: ')
                 if self.isRedmod == '':
                     self.isRedmod = 'a'
                 self.isRedmod = self.isRedmod[0].capitalize()
@@ -74,38 +76,51 @@ class build():
                 json.dump(configData, file, indent=4)
     
     def pack(self):
-        try:
-            if path.exists('src/redscript'):
-                system(f'xcopy /Y /D /S /I src\\redscript "build\\r6\\scripts\\{self.name}"')
-            
-            if path.exists('src/archivexl'):
-                system(f'xcopy /Y /D /S /I src\\archivexl "build\\archive\\pc\\mod"')
-            
-            if self.isRedmod:
-                if path.exists('src/archive'):
-                    system(f'xcopy /Y /D /S /I src\\archive "build\\mods\\{self.name}\\archives\\{self.name}"')
-                    system(f'wolvenkit.cli.exe pack "build\\mods\\{self.name}\\archives\\{self.name}"')
-                    system(f'rmdir /Q /S "build\\mods\\{self.name}\\archives\\{self.name}"')
+        if path.exists('src/redscript'):
+            i = 0
+            logFile = f'{self.name}_[{str(i)}].log'
+            while path.isfile(f'scripts/log/{logFile}'):
+                i += 1
+                logFile = f'{self.name}_[{str(i)}].log'
 
-                    infoData = {
-                        "name": self.name,
-                        "version": self.version,
-                        "customSounds": []
-                    }
-
-                    with open(f'build/mods/{self.name}/info.json', 'w') as file:
-                        json.dump(infoData, file, indent=4)
+            system(f'scripts\\redscript-cli.exe lint -s "src\\redscript" -b "{self.bundleFile}" >> "scripts\\log\\{logFile}"')
+            system(f'scripts\\redscript-cli.exe lint -s "src\\redscript" -b "{self.bundleFile}"')
+            
+            with open(f'scripts\\log\\{logFile}', 'r') as file:
+                log = file.read()
+            if 'ERROR' in log:
+                print("\n\n>> There are errors in one of your .reds files, correct them and try again later! Press a key to exit...")
+                system('pause >nul')
+                exit()
             else:
-                if path.exists('src/archive'):
-                    system(f'xcopy /Y /D /S /I src\\archive "build\\archive\\pc\\mod\\{self.name}"')
-                    system(f'wolvenkit.cli.exe pack "build\\archive\\pc\\mod\\{self.name}"')
-                    system(f'rmdir /Q /S "build\\archive\\pc\\mod\\{self.name}"')
-            
-            print(f'\n\nThe "{self.name}" project was packaged in the "build" folder. Press a key to exit...')
-            system('pause >nul')
-        except:
-            print(f'\n\nError packaging the "{self.name}" project! Press a key to exit...')
-            system('pause >nul')
+                system(f'xcopy /Y /D /S /I src\\redscript "build\\r6\\scripts\\{self.name}"')
+        
+        if path.exists('src/archivexl'):
+            system(f'xcopy /Y /D /S /I src\\archivexl "build\\archive\\pc\\mod"')
+        
+        if self.isRedmod:
+            if path.exists('src/archive'):
+                system(f'xcopy /Y /D /S /I src\\archive "build\\mods\\{self.name}\\archives\\{self.name}"')
+                system(f'wolvenkit.cli.exe pack "build\\mods\\{self.name}\\archives\\{self.name}"')
+                system(f'rmdir /Q /S "build\\mods\\{self.name}\\archives\\{self.name}"')
+
+                infoData = {
+                    "name": self.name,
+                    "version": self.version,
+                    "customSounds": []
+                }
+
+                with open(f'build/mods/{self.name}/info.json', 'w') as file:
+                    json.dump(infoData, file, indent=4)
+        else:
+            if path.exists('src/archive'):
+                system(f'xcopy /Y /D /S /I src\\archive "build\\archive\\pc\\mod\\{self.name}"')
+                system(f'wolvenkit.cli.exe pack "build\\archive\\pc\\mod\\{self.name}"')
+                system(f'rmdir /Q /S "build\\archive\\pc\\mod\\{self.name}"')
+        
+        print(f'\n\n>> The "{self.name}" project was packaged in the "build" folder. Press a key to exit...')
+        system('pause >nul')
+        exit()
 
 
 

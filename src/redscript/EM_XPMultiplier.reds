@@ -85,25 +85,26 @@ public class EM_XPMultiplier {
   private static func GetMultiplierValue(amount: Int32, type: gamedataProficiencyType) -> Float {
     let settings: EM_XPMultiplayerSettings;
     let xpMultiplier: Float;
+    let xp_modsettings: EM_ModSettings;
 
     // Multiplier values ​​for each of the skills
     // To use the same value for all skills -> settings.useFlexXP = true;
-    settings.useFlexXP = EM_ModSettings.useFlexXP;
-    settings.multiplierFlex = EM_ModSettings.multiplierFlex;
-    settings.multiplierLevel = EM_ModSettings.multiplierLevel;
-    settings.multiplierStreetCred = EM_ModSettings.multiplierStreetCred;
-    settings.multiplierAssault = EM_ModSettings.multiplierAssault;
-    settings.multiplierAthletics = EM_ModSettings.multiplierAthletics;
-    settings.multiplierBrawling = EM_ModSettings.multiplierBrawling;
-    settings.multiplierColdBlood = EM_ModSettings.multiplierColdBlood;
-    settings.multiplierCombatHacking = EM_ModSettings.multiplierCombatHacking;
-    settings.multiplierCrafting = EM_ModSettings.multiplierCrafting;
-    settings.multiplierDemolition = EM_ModSettings.multiplierDemolition;
-    settings.multiplierEngineering = EM_ModSettings.multiplierEngineering;
-    settings.multiplierGunslinger = EM_ModSettings.multiplierGunslinger;
-    settings.multiplierHacking = EM_ModSettings.multiplierHacking;
-    settings.multiplierKenjutsu = EM_ModSettings.multiplierKenjutsu;
-    settings.multiplierStealth = EM_ModSettings.multiplierStealth;
+    settings.useFlexXP = xp_modsettings.useFlexXP;
+    settings.multiplierFlex = xp_modsettings.multiplierFlex;
+    settings.multiplierLevel = xp_modsettings.multiplierLevel;
+    settings.multiplierStreetCred = xp_modsettings.multiplierStreetCred;
+    settings.multiplierAssault = xp_modsettings.multiplierAssault;
+    settings.multiplierAthletics = xp_modsettings.multiplierAthletics;
+    settings.multiplierBrawling = xp_modsettings.multiplierBrawling;
+    settings.multiplierColdBlood = xp_modsettings.multiplierColdBlood;
+    settings.multiplierCombatHacking = xp_modsettings.multiplierCombatHacking;
+    settings.multiplierCrafting = xp_modsettings.multiplierCrafting;
+    settings.multiplierDemolition = xp_modsettings.multiplierDemolition;
+    settings.multiplierEngineering = xp_modsettings.multiplierEngineering;
+    settings.multiplierGunslinger = xp_modsettings.multiplierGunslinger;
+    settings.multiplierHacking = xp_modsettings.multiplierHacking;
+    settings.multiplierKenjutsu = xp_modsettings.multiplierKenjutsu;
+    settings.multiplierStealth = xp_modsettings.multiplierStealth;
 
     if (settings.useFlexXP) {
       xpMultiplier = settings.multiplierFlex;
