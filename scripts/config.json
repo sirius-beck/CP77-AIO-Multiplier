@@ -1,5 +1,10 @@
 {
     "name": "Experience_Manager",
     "version": "1.0.0",
-    "isRedmod": false
+    "isRedmod": false,
+    "externals": {
+        "bundleFile": "C:\\Users\\katio\\Desktop\\ExperienceManager\\scripts\\final.redscripts",
+        "wolvenkitCLI": "X:\\Mod Tools\\02 - Cyberpunk 2077\\WolvenKit\\CLI\\WolvenKit.CLI.exe",
+        "redscriptCLI": "X:\\Mod Tools\\02 - Cyberpunk 2077\\Redscript\\redscript-cli.exe"
+    }
 }

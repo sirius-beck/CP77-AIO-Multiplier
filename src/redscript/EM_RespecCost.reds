@@ -13,12 +13,12 @@ public final const func GetTotalRespecCost() -> Int32 {
 
 public class EM_RespecCost {
   private static func NewRespecCost(cost: Int32) -> Int32 {
-    let respec_modsettings = new EM_RespecModSettings();
+    let respecModSettings = new EM_RespecModSettings();
 
-    if(respec_modsettings.freeRespecCost) {
+    if(respecModSettings.freeRespecCost) {
       cost = 0;
     } else {
-      cost = Cast<Int32>(Cast<Float>(cost) * respec_modsettings.multiplierRespecCost);
+      cost = Cast<Int32>(Cast<Float>(cost) * respecModSettings.multiplierRespecCost);
     }
 
     return cost;

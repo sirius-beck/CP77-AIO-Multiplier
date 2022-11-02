@@ -1,24 +1,49 @@
 import json
 from os import path, system
+from time import sleep
 
 system('cls')
 
-class build():
+class ModManager():
     def __init__(self) -> None:
-        self.bundleFile = 'scripts\\final.redscripts'
         self.name = ''
         self.version = ''
         self.isRedmod = ''
+        self.bundleFile = ''
+        self.wolvenkitCLI = ''
+        self.redscriptCLI = ''
     
     def run(self):
         if path.isfile('scripts/config.json'):
             self.name = self.setConfig('name')
             self.version = self.setConfig('version')
             self.isRedmod = self.setConfig('isRedmod')
+            self.bundleFile = self.setConfig('bundleFile')
+            self.wolvenkitCLI = self.setConfig('wolvenkitCLI')
+            self.redscriptCLI = self.setConfig('redscriptCLI')
         else:
             self.setConfig('create')
         
-        self.pack()
+        self.menu()
+    
+    def menu(self):
+        system('cls')
+        print('| MOD MANAGER')
+        print('|- 1. Change mod settings')
+        print('|- 2. Convert json to CR2W files')
+        print('|- 3. Build mod')
+        option = int(input('|\n|- Enter the desired option number: '))
+
+        if option == 1:
+            print('\nComing soon..\nChange current settings to mod by editing "mod_config.json" file.')
+            sleep(1.5)
+            self.menu()
+        elif option == 2:
+            self.convert()
+        elif option == 3:
+            self.pack()
+        else:
+            self.menu()
     
     def setConfig(self, key):
         if key != 'create':
@@ -27,6 +52,9 @@ class build():
                 name = config['name']
                 version = config['version']
                 isRedmod = config['isRedmod']
+                bundleFile = config['externals']['self.bundleFile']
+                wolvenkitCLI = config['externals']['self.wolvenkitCLI']
+                redscriptCLI = config['externals']['self.redscriptCLI']
             
             if key == 'name':
                 return name
@@ -34,45 +62,102 @@ class build():
                 return version
             if key == 'isRedmod':
                 return isRedmod
+            if key == 'bundleFile':
+                return bundleFile
+            if key == 'wolvenkitCLI':
+                return wolvenkitCLI
+            if key == 'redscriptCLI':
+                return redscriptCLI
         else:
-            self.name = input('>> Mod name: ')
+            print('| MOD DETAILS')
+            self.name = input('|- Mod name: ')
             while self.name == '':
                 system('cls')
-                self.name = input('>> Mod version (ex: 1.0.0): ')
+                print('| MOD DETAILS')
+                self.name = input('|- Mod version (ex: 1.0.0): ')
 
-            self.version = input('>> Mod version (ex: 1.0.0): ')
+            self.version = input('|- Mod version (ex: 1.0.0): ')
             while self.version == '':
                 system('cls')
-                print(f'>> Mod name: {self.name}')
-                self.version = input('>> Mod version (ex: 1.0.0): ')
+                print('| MOD DETAILS')
+                print(f'|- Mod name: {self.name}')
+                self.version = input('|- Mod version (ex: 1.0.0): ')
 
-            self.isRedmod = input('>> Build for REDmod? [y]es / [n]o: ')
-            if self.isRedmod == '':
-                self.isRedmod = 'a'
-            self.isRedmod = self.isRedmod[0].capitalize()
+            isRedmod = input('|- Build for REDmod? [y]es / [n]o: ')
+            if isRedmod == '':
+                isRedmod = 'a'
+            isRedmod = isRedmod[0].capitalize()
 
-            while self.isRedmod != 'Y' and self.isRedmod != 'N':
+            while isRedmod != 'Y' and isRedmod != 'N':
                 system('cls')
-                print(f'>> Mod name: {self.name}')
-                print(f'>> Mod version (ex: 1.0.0): {self.version}')
-                self.isRedmod = input('>> Build for REDmod? [y]es / [n]o: ')
-                if self.isRedmod == '':
-                    self.isRedmod = 'a'
-                self.isRedmod = self.isRedmod[0].capitalize()
+                print('| MOD DETAILS')
+                print(f'|- Mod name: {self.name}')
+                print(f'|- Mod version (ex: 1.0.0): {self.version}')
+                isRedmod = input('>> Build for REDmod? [y]es / [n]o: ')
+                if isRedmod == '':
+                    isRedmod = 'a'
+                isRedmod = isRedmod[0].capitalize()
             
-            if self.isRedmod == 'Y':
+            if isRedmod == 'Y':
                 self.isRedmod = True
-            elif self.isRedmod == 'N':
+            elif isRedmod == 'N':
                 self.isRedmod = False
+            
+            bundleFilePath = input('|- Dir containing the "final.redscripts" file: ')
+            self.bundleFile = path.join(bundleFilePath, 'final.redscripts').replace('/', '\\')
+            while path.isfile(self.bundleFile) == False:
+                system('cls')
+                print('| MOD DETAILS')
+                print(f'|- Mod name: {self.name}')
+                print(f'|- Mod version (ex: 1.0.0): {self.version}')
+                print(f'|- Build for REDmod? [y]es / [n]o: {isRedmod}')
+                print('\n| EXTERNAL FILES')
+                bundleFilePath = input('|- Dir containing the "final.redscripts" file: ')
+                self.bundleFile = path.join(bundleFilePath, 'final.redscripts').replace('/', '\\')
+            
+            wolvenkitCLIPath = input('|- Dir containing the "WolvenKit.CLI.exe" file: ')
+            self.wolvenkitCLI = path.join(wolvenkitCLIPath, 'WolvenKit.CLI.exe').replace('/', '\\')
+            while path.isfile(self.wolvenkitCLI) == False:
+                system('cls')
+                print('| MOD DETAILS')
+                print(f'|- Mod name: {self.name}')
+                print(f'|- Mod version (ex: 1.0.0): {self.version}')
+                print(f'|- Build for REDmod? [y]es / [n]o: {isRedmod}')
+                print('\n| EXTERNAL FILES')
+                print(f'|- Dir containing the "final.redscripts" file: {bundleFilePath}')
+                wolvenkitCLIPath = input('|- Dir containing the "WolvenKit.CLI.exe" file: ')
+                self.wolvenkitCLI = path.join(wolvenkitCLIPath, 'WolvenKit.CLI.exe').replace('/', '\\')
+
+            redscriptCLIPath = input('|- Dir containing the "redscript-cli.exe" file: ')
+            self.redscriptCLI = path.join(redscriptCLIPath, 'redscript-cli.exe').replace('/', '\\')
+            while path.isfile(self.redscriptCLI) == False:
+                system('cls')
+                print('| MOD DETAILS')
+                print(f'|- Mod name: {self.name}')
+                print(f'|- Mod version (ex: 1.0.0): {self.version}')
+                print(f'|- Build for REDmod? [y]es / [n]o: {isRedmod}')
+                print('\n| EXTERNAL FILES')
+                print(f'|- Dir containing the "final.redscripts" file: {bundleFilePath}')
+                print(f'|- Dir containing the "WolvenKit.CLI.exe" file: {wolvenkitCLIPath}')
+                redscriptCLIPath = input('|- Dir containing the "redscript-cli.exe" file: ')
+                self.redscriptCLI = path.join(redscriptCLIPath, 'redscript-cli.exe').replace('/', '\\')
 
             configData = {
                 "name": self.name,
                 "version": self.version,
-                "isRedmod": self.isRedmod
+                "isRedmod": self.isRedmod,
+                "externals": {
+                    "bundleFile": self.bundleFile,
+                    "wolvenkitCLI": self.wolvenkitCLI,
+                    "redscriptCLI": self.redscriptCLI
+                }
             }
             
             with open('scripts/config.json', 'w') as file:
                 json.dump(configData, file, indent=4)
+    
+    def convert(self):
+        pass
     
     def pack(self):
         if path.exists('src/redscript'):
@@ -83,8 +168,8 @@ class build():
                 logFile = f'{self.name}_[{str(i)}].log'
 
             system('mkdir "scripts\\log"')
-            system(f'scripts\\redscript-cli.exe lint -s "src\\redscript" -b "{self.bundleFile}" >> "scripts\\log\\{logFile}"')
-            system(f'scripts\\redscript-cli.exe lint -s "src\\redscript" -b "{self.bundleFile}"')
+            system(f'{self.redscriptCLI} lint -s "src\\redscript" -b "{self.bundleFile}" >> "scripts\\log\\{logFile}"')
+            system(f'{self.redscriptCLI} lint -s "src\\redscript" -b "{self.bundleFile}"')
             
             with open(f'scripts\\log\\{logFile}', 'r') as file:
                 log = file.read()
@@ -125,5 +210,5 @@ class build():
 
 
 if __name__ == '__main__':
-    app = build()
+    app = ModManager()
     app.run()
