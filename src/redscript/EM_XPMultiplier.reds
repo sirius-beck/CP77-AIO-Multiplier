@@ -1,4 +1,4 @@
-import EM_ModSettings.Mod.*
+import EM_ModSettings.Mod.EM_ExperienceModSettings
 
 @replaceMethod(PlayerDevelopmentData)
 public final const func AddExperience(amount: Int32, type: gamedataProficiencyType, telemetryGainReason: telemetryLevelGainReason) -> Void {
@@ -85,7 +85,7 @@ public class EM_XPMultiplier {
   private static func GetMultiplierValue(amount: Int32, type: gamedataProficiencyType) -> Float {
     let settings: EM_XPMultiplayerSettings;
     let xpMultiplier: Float;
-    let xp_modsettings: EM_ModSettings;
+    let xp_modsettings = new EM_ExperienceModSettings();
 
     // Multiplier values ​​for each of the skills
     // To use the same value for all skills -> settings.useFlexXP = true;

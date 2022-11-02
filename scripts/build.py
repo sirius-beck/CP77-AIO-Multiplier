@@ -1,12 +1,11 @@
 import json
 from os import path, system
 
-system('@echo off')
 system('cls')
 
 class build():
     def __init__(self) -> None:
-        self.bundleFile = 'X:\\Cyberpunk 2077\\r6\\cache\\modded\\final.redscripts'
+        self.bundleFile = 'scripts\\final.redscripts'
         self.name = ''
         self.version = ''
         self.isRedmod = ''
@@ -83,6 +82,7 @@ class build():
                 i += 1
                 logFile = f'{self.name}_[{str(i)}].log'
 
+            system('mkdir "scripts\\log"')
             system(f'scripts\\redscript-cli.exe lint -s "src\\redscript" -b "{self.bundleFile}" >> "scripts\\log\\{logFile}"')
             system(f'scripts\\redscript-cli.exe lint -s "src\\redscript" -b "{self.bundleFile}"')
             

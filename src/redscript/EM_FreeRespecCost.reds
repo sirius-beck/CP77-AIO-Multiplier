@@ -1,4 +1,4 @@
-import EM_ModSettings.Mod.*
+import EM_ModSettings.Mod.EM_RespecModSettings
 
 @replaceMethod(PlayerDevelopmentData)
 public final const func GetTotalRespecCost() -> Int32 {
@@ -6,13 +6,21 @@ public final const func GetTotalRespecCost() -> Int32 {
   let singlePerkPrice: Int32 = Cast<Int32>(TweakDBInterface.GetConstantStatModifierRecord(t"Price.RespecSinglePerk").Value());
   let cost: Int32 = basePrice + singlePerkPrice * (this.GetSpentPerkPoints() + this.GetSpentTraitPoints());
 
-  let respec_modsettings: EM_ModSettings;
-
-  if(respec_modsettings.freeRespecCost) {
-    cost = 0;
-  } else {
-    cost = Cast<Int32>(Cast<Float>(cost) * respec_modsettings.multiplierRespecCost);
-  }
+  cost = EM_RespecCost.NewRespecCost(cost);
 
   return cost;
+}
+
+public class EM_RespecCost {
+  private static func NewRespecCost(cost: Int32) -> Int32 {
+    let respec_modsettings = new EM_RespecModSettings();
+
+    if(respec_modsettings.freeRespecCost) {
+      cost = 0;
+    } else {
+      cost = Cast<Int32>(Cast<Float>(cost) * respec_modsettings.multiplierRespecCost);
+    }
+
+    return cost;
+  }
 }

@@ -1,7 +1,6 @@
 module EM_ModSettings.Mod
 
-public native class EM_ModSettings extends IScriptable {
-  public static native func GetInstance() -> ref<EM_ModSettings>;
+public class EM_RespecModSettings extends IScriptable {
 
   @runtimeProperty("ModSettings.mod", "Experience Manager")
   @runtimeProperty("ModSettings.category", "str-respecCostCat")
@@ -18,7 +17,9 @@ public native class EM_ModSettings extends IScriptable {
   @runtimeProperty("ModSettings.min", "0.5")
   @runtimeProperty("ModSettings.max", "100.0")
   let multiplierRespecCost: Float = 1.0;
+}
 
+public class EM_ExperienceModSettings extends IScriptable{
   @runtimeProperty("ModSettings.mod", "Experience Manager")
   @runtimeProperty("ModSettings.category", "str-ExperienceCat")
   @runtimeProperty("ModSettings.displayName", "str-useFlexXP")
