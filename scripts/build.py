@@ -14,7 +14,7 @@ class ModManager():
         self.redscriptCLI = ''
     
     def run(self):
-        if path.isfile('scripts/config.json'):
+        if path.isfile('scripts/mod_config.json'):
             self.name = self.setConfig('name')
             self.version = self.setConfig('version')
             self.isRedmod = self.setConfig('isRedmod')
@@ -47,7 +47,7 @@ class ModManager():
     
     def setConfig(self, key):
         if key != 'create':
-            with open('scripts/config.json', 'r') as file:
+            with open('scripts/mod_config.json', 'r') as file:
                 config = json.load(file)
                 name = config['name']
                 version = config['version']
@@ -153,7 +153,7 @@ class ModManager():
                 }
             }
             
-            with open('scripts/config.json', 'w') as file:
+            with open('scripts/mod_config.json', 'w') as file:
                 json.dump(configData, file, indent=4)
     
     def convert(self):
