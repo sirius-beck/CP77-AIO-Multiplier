@@ -1,0 +1,162 @@
+{
+    "file": "ModSettings.reds",
+    "lang": "en-us",
+    "entries": [
+        {
+            "key": "em-ms-category-respecCost",
+            "value": "Respec Cost"
+        },
+        {
+            "key": "em-ms-category-playerExperience",
+            "value": "Experience - Player"
+        },
+        {
+            "key": "em-ms-category-skillsExperience",
+            "value": "Experience - Skills"
+        },
+        {
+            "key": "em-ms-displayName-NoRespecCost",
+            "value": "No Respec Cost"
+        },
+        {
+            "key": "em-ms-desc-NoRespecCost",
+            "value": "There will be no cost to reset skill points. The value in the multiplier below will be ignored."
+        },
+        {
+            "key": "em-ms-displayName-multRespecCost",
+            "value": "Multiplier"
+        },
+        {
+            "key": "em-ms-desc-multRespecCost",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-useFlexXP",
+            "value": "Use flex XP"
+        },
+        {
+            "key": "em-ms-desc-useFlexXP",
+            "value": "The experience gained for the level and all player skills will share the same multiplier."
+        },
+        {
+            "key": "em-ms-displayName-multFlex",
+            "value": "Flex Multiplier"
+        },
+        {
+            "key": "em-ms-desc-multFlex",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multLevel",
+            "value": "Level"
+        },
+        {
+            "key": "em-ms-desc-multLevel",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multStreetCred",
+            "value": "Street Cred"
+        },
+        {
+            "key": "em-ms-desc-multStreetCred",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multAssault",
+            "value": "Assault"
+        },
+        {
+            "key": "em-ms-desc-multAssault",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multAthletics",
+            "value": "Athletics"
+        },
+        {
+            "key": "em-ms-desc-multAthletics",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multBrawling",
+            "value": "Brawling"
+        },
+        {
+            "key": "em-ms-desc-multBrawling",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multColdBlood",
+            "value": "Cold Blood"
+        },
+        {
+            "key": "em-ms-desc-multColdBlood",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multCombatHacking",
+            "value": "Combat Hacking"
+        },
+        {
+            "key": "em-ms-desc-multCombatHacking",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multCrafting",
+            "value": "Crafting"
+        },
+        {
+            "key": "em-ms-desc-multCrafting",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multDemolition",
+            "value": "Demolition"
+        },
+        {
+            "key": "em-ms-desc-multDemolition",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multEngineering",
+            "value": "Engineering"
+        },
+        {
+            "key": "em-ms-desc-multEngineering",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multGunslinger",
+            "value": "Gunslinger"
+        },
+        {
+            "key": "em-ms-desc-multGunslinger",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multHacking",
+            "value": "Hacking"
+        },
+        {
+            "key": "em-ms-desc-multHacking",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multKenjutsu",
+            "value": "Kenjutsu"
+        },
+        {
+            "key": "em-ms-desc-multKenjutsu",
+            "value": "The experience gained will be multiplied by the value of this field."
+        },
+        {
+            "key": "em-ms-displayName-multStealth",
+            "value": "Stealth"
+        },
+        {
+            "key": "em-ms-desc-multStealth",
+            "value": "The experience gained will be multiplied by the value of this field."
+        }
+    ]
+}
