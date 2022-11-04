@@ -1,5 +1,5 @@
-import ExperienceManager.UI.PlayerExperienceModSettings
-import ExperienceManager.UI.SkillsExperienceModSettings
+import AIOMultiplier.UI.PlayerExperienceModSettings
+import AIOMultiplier.UI.SkillsExperienceModSettings
 
 @replaceMethod(PlayerDevelopmentData)
 public final const func AddExperience(amount: Int32, type: gamedataProficiencyType, telemetryGainReason: telemetryLevelGainReason) -> Void {
@@ -10,7 +10,7 @@ public final const func AddExperience(amount: Int32, type: gamedataProficiencyTy
   let pIndex: Int32 = this.GetProficiencyIndexByType(type);
 
   // Get the xp amount with multiplier
-  amount = EM_XPMultiplier.GetNewXPAmount(amount, type);
+  amount = EM_XPMultiplier.NewXPAmount(amount, type);
 
   if pIndex >= 0 && !this.IsProficiencyMaxLvl(type) {
     while amount > 0 && !this.IsProficiencyMaxLvl(type) {
@@ -63,73 +63,46 @@ public final const func AddExperience(amount: Int32, type: gamedataProficiencyTy
   };
 }
 
-public struct EM_XPMultiplayerSettings {
-  public let useFlexXP: Bool;
-  public let multiplierFlex: Float;
-  public let multiplierLevel: Float;
-  public let multiplierStreetCred: Float;
-  public let multiplierAssault: Float;
-  public let multiplierAthletics: Float;
-  public let multiplierBrawling: Float;
-  public let multiplierColdBlood: Float;
-  public let multiplierCombatHacking: Float;
-  public let multiplierCrafting: Float;
-  public let multiplierDemolition: Float;
-  public let multiplierEngineering: Float;
-  public let multiplierGunslinger: Float;
-  public let multiplierHacking: Float;
-  public let multiplierKenjutsu: Float;
-  public let multiplierStealth: Float;
-}
-
 public class EM_XPMultiplier {
-  private static func GetMultiplierValue(amount: Int32, type: gamedataProficiencyType) -> Float {
-    let settings: EM_XPMultiplayerSettings;
+  private static func GetMultiplier(amount: Int32, type: gamedataProficiencyType) -> Float {
     let xpMultiplier: Float;
-    let playerExperienceModSettings = new PlayerExperienceModSettings();
-    let skillsExperienceModSettings = new SkillsExperienceModSettings();
+    let playerExperience = new PlayerExperienceModSettings();
+    let skillsExperience = new SkillsExperienceModSettings();
 
-    // Multiplier values ​​for each of the skills
-    // To use the same value for all skills -> settings.useFlexXP = true;
-    settings.multiplierLevel = playerExperienceModSettings.multiplierLevel;
-    settings.multiplierStreetCred = playerExperienceModSettings.multiplierStreetCred;
-    settings.useFlexXP = skillsExperienceModSettings.useFlexXP;
-    settings.multiplierFlex = skillsExperienceModSettings.multiplierFlex;
-    settings.multiplierAssault = skillsExperienceModSettings.multiplierAssault;
-    settings.multiplierAthletics = skillsExperienceModSettings.multiplierAthletics;
-    settings.multiplierBrawling = skillsExperienceModSettings.multiplierBrawling;
-    settings.multiplierColdBlood = skillsExperienceModSettings.multiplierColdBlood;
-    settings.multiplierCombatHacking = skillsExperienceModSettings.multiplierCombatHacking;
-    settings.multiplierCrafting = skillsExperienceModSettings.multiplierCrafting;
-    settings.multiplierDemolition = skillsExperienceModSettings.multiplierDemolition;
-    settings.multiplierEngineering = skillsExperienceModSettings.multiplierEngineering;
-    settings.multiplierGunslinger = skillsExperienceModSettings.multiplierGunslinger;
-    settings.multiplierHacking = skillsExperienceModSettings.multiplierHacking;
-    settings.multiplierKenjutsu = skillsExperienceModSettings.multiplierKenjutsu;
-    settings.multiplierStealth = skillsExperienceModSettings.multiplierStealth;
-
-    if (settings.useFlexXP) {
+    if (skillsExperience.useFlexXP) {
       switch type {
-        case gamedataProficiencyType.Level: xpMultiplier = settings.multiplierLevel;
-        case gamedataProficiencyType.StreetCred: xpMultiplier = settings.multiplierStreetCred;
-        default: xpMultiplier = settings.multiplierFlex;
+        case gamedataProficiencyType.Level: xpMultiplier = playerExperience.multiplierLevel;
+        case gamedataProficiencyType.StreetCred: xpMultiplier = playerExperience.multiplierStreetCred;
+        case gamedataProficiencyType.Assault: xpMultiplier = skillsExperience.multiplierFlex;
+        case gamedataProficiencyType.Athletics: xpMultiplier = skillsExperience.multiplierFlex;
+        case gamedataProficiencyType.Brawling: xpMultiplier = skillsExperience.multiplierFlex;
+        case gamedataProficiencyType.ColdBlood: xpMultiplier = skillsExperience.multiplierFlex;
+        case gamedataProficiencyType.CombatHacking: xpMultiplier = skillsExperience.multiplierFlex;
+        case gamedataProficiencyType.Crafting: xpMultiplier = skillsExperience.multiplierFlex;
+        case gamedataProficiencyType.Demolition: xpMultiplier = skillsExperience.multiplierFlex;
+        case gamedataProficiencyType.Engineering: xpMultiplier = skillsExperience.multiplierFlex;
+        case gamedataProficiencyType.Gunslinger: xpMultiplier = skillsExperience.multiplierFlex;
+        case gamedataProficiencyType.Hacking: xpMultiplier = skillsExperience.multiplierFlex;
+        case gamedataProficiencyType.Kenjutsu: xpMultiplier = skillsExperience.multiplierFlex;
+        case gamedataProficiencyType.Stealth: xpMultiplier = skillsExperience.multiplierFlex;
+        default: xpMultiplier = 1.0;
       }
     } else {
       switch type {
-        case gamedataProficiencyType.Level: xpMultiplier = settings.multiplierLevel;
-        case gamedataProficiencyType.StreetCred: xpMultiplier = settings.multiplierStreetCred;
-        case gamedataProficiencyType.Assault: xpMultiplier = settings.multiplierAssault;
-        case gamedataProficiencyType.Athletics: xpMultiplier = settings.multiplierAthletics;
-        case gamedataProficiencyType.Brawling: xpMultiplier = settings.multiplierBrawling;
-        case gamedataProficiencyType.ColdBlood: xpMultiplier = settings.multiplierColdBlood;
-        case gamedataProficiencyType.CombatHacking: xpMultiplier = settings.multiplierCombatHacking;
-        case gamedataProficiencyType.Crafting: xpMultiplier = settings.multiplierCrafting;
-        case gamedataProficiencyType.Demolition: xpMultiplier = settings.multiplierDemolition;
-        case gamedataProficiencyType.Engineering: xpMultiplier = settings.multiplierEngineering;
-        case gamedataProficiencyType.Gunslinger: xpMultiplier = settings.multiplierGunslinger;
-        case gamedataProficiencyType.Hacking: xpMultiplier = settings.multiplierHacking;
-        case gamedataProficiencyType.Kenjutsu: xpMultiplier = settings.multiplierKenjutsu;
-        case gamedataProficiencyType.Stealth: xpMultiplier = settings.multiplierStealth;
+        case gamedataProficiencyType.Level: xpMultiplier = playerExperience.multiplierLevel;
+        case gamedataProficiencyType.StreetCred: xpMultiplier = playerExperience.multiplierStreetCred;
+        case gamedataProficiencyType.Assault: xpMultiplier = skillsExperience.multiplierAssault;
+        case gamedataProficiencyType.Athletics: xpMultiplier = skillsExperience.multiplierAthletics;
+        case gamedataProficiencyType.Brawling: xpMultiplier = skillsExperience.multiplierBrawling;
+        case gamedataProficiencyType.ColdBlood: xpMultiplier = skillsExperience.multiplierColdBlood;
+        case gamedataProficiencyType.CombatHacking: xpMultiplier = skillsExperience.multiplierCombatHacking;
+        case gamedataProficiencyType.Crafting: xpMultiplier = skillsExperience.multiplierCrafting;
+        case gamedataProficiencyType.Demolition: xpMultiplier = skillsExperience.multiplierDemolition;
+        case gamedataProficiencyType.Engineering: xpMultiplier = skillsExperience.multiplierEngineering;
+        case gamedataProficiencyType.Gunslinger: xpMultiplier = skillsExperience.multiplierGunslinger;
+        case gamedataProficiencyType.Hacking: xpMultiplier = skillsExperience.multiplierHacking;
+        case gamedataProficiencyType.Kenjutsu: xpMultiplier = skillsExperience.multiplierKenjutsu;
+        case gamedataProficiencyType.Stealth: xpMultiplier = skillsExperience.multiplierStealth;
         default: xpMultiplier = 1.0;
       }
     }
@@ -137,8 +110,8 @@ public class EM_XPMultiplier {
     return xpMultiplier;
   }
 
-  public static func GetNewXPAmount(amount: Int32, type: gamedataProficiencyType) -> Int32 {
-    let xpValue: Int32 = Cast<Int32>(Cast<Float>(amount) * EM_XPMultiplier.GetMultiplierValue(amount, type));
+  public static func NewXPAmount(amount: Int32, type: gamedataProficiencyType) -> Int32 {
+    let xpValue: Int32 = Cast<Int32>(Cast<Float>(amount) * EM_XPMultiplier.GetMultiplier(amount, type));
 
     return xpValue;
   }

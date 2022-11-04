@@ -17,18 +17,28 @@
                     "entries": [
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-mod-name",
+                            "femaleVariant": "AIO Multiplier"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "em-ms-category-respecCost",
                             "femaleVariant": "Custo de Respeito"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-category-itemsMult",
+                            "femaleVariant": "Multiplicadores de itens"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "em-ms-category-playerExperience",
-                            "femaleVariant": "Experiência - Jogador"
+                            "femaleVariant": "Multiplicadores de experiência - Jogador"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "em-ms-category-skillsExperience",
-                            "femaleVariant": "Experiência - Habilidades"
+                            "femaleVariant": "Multiplicadores de experiência - Habilidades"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -49,6 +59,16 @@
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "em-ms-desc-multRespecCost",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-moneyMult",
+                            "femaleVariant": "Dinheiro"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-moneyMult",
+                            "femaleVariant": "O dinheiro ganho será multiplicado pelo valor deste campo."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
