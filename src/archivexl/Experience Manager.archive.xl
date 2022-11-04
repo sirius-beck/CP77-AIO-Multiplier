@@ -1,4 +1,4 @@
 localization:
     onscreens:
-        en-us: Katiorro\Experience Manager\localization\en-us.json
-        pt-br: Katiorro\Experience Manager\localization\pt-br.json
+        en-us: katiorro\experience_manager\localization\en-us.json
+        pt-br: katiorro\experience_manager\localization\pt-br.json
