@@ -1,38 +1,33 @@
 import AIOMultiplier.UI.DevPointsQuantitySettings
 
-@addField(PlayerDevelopmentData)
-private let aioDevPoints: ref<AIODevPoints>;
-
-@wrapMethod(PlayerDevelopmentData)
+@replaceMethod(PlayerDevelopmentData)
 private final const func ModifyDevPoints(type: gamedataProficiencyType, level: Int32) -> Void {
-    wrappedMethod(type, level);
+    let val: Int32;
+    let i: Int32 = 0;
+    let aioDevPoints = new AIODevPoints();
 
-    if !IsDefined(this.aioDevPoints) {
-        this.aioDevPoints = new AIODevPoints();
-    }
-
-    this.aioDevPoints.AddDevPoints(this, type, level);
+    while i <= EnumInt(gamedataDevelopmentPointType.Count) {
+        if aioDevPoints.CheckIfModify() {
+            val = aioDevPoints.devPointsPerLevel;
+        } else {
+            val = this.GetDevPointsForLevel(level, type, IntEnum<gamedataDevelopmentPointType>(i));
+        }
+        
+        if val > 0 {
+        this.AddDevelopmentPoints(val, IntEnum<gamedataDevelopmentPointType>(i));
+        };
+        i += 1;
+    };
 }
 
 public class AIODevPoints {
     let devPointsPerLevel: Int32;
     let changeDevPoints: Bool;
 
-    public func AddDevPoints(playerData: ref<PlayerDevelopmentData>,type: gamedataProficiencyType, level: Int32) {
-        let initVal: Int32;
-        let i: Int32 = 0;
-        let newValue: Int32;
-        
-        if this.changeDevPoints {
-            while i <= EnumInt(gamedataDevelopmentPointType.Count) {
-                initVal = playerData.GetDevPointsForLevel(level, type, IntEnum<gamedataDevelopmentPointType>(i));
-                newValue = this.devPointsPerLevel - initVal;
-                if newValue > 0 {
-                    playerData.AddDevelopmentPoints(newValue, IntEnum<gamedataDevelopmentPointType>(i));
-                };
-                i += 1;
-            };
-        }
+    public func CheckIfModify() -> Bool {
+        this.GetDevPointsQuantity();
+
+        return this.changeDevPoints;
     }
 
     private func GetDevPointsQuantity() -> Void {
