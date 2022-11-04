@@ -229,6 +229,26 @@
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "em-ms-desc-multStealth",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-EnableDevPointsQuantity",
+                            "femaleVariant": "Pontos de Desenvolvimento Por Level - Habilitar"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-EnableDevPointsQuantity",
+                            "femaleVariant": "Ativar ou desativar a quantidade de pontos de desenvolvimentos por level definidos no campo abaixo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-MultDevPointsQuantity",
+                            "femaleVariant": "Pontos de Desenvolvimento Por Level - Quantidade"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-MultDevPointsQuantity",
+                            "femaleVariant": "Quantidade de pontos de desenvolvimento que o jogador ganhará por level."
                         }
                     ]
                 }

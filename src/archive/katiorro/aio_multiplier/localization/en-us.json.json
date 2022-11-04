@@ -229,6 +229,26 @@
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multStealth",
                             "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-EnableDevPointsQuantity",
+                            "femaleVariant": "Development Points Per Level - Enable"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-EnableDevPointsQuantity",
+                            "femaleVariant": "Activate or deactivate the amount of development points per level defined in the field below."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-MultDevPointsQuantity",
+                            "femaleVariant": "Development Points Per Level - Amount"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-MultDevPointsQuantity",
+                            "femaleVariant": "Amount of development points the player will earn per level."
                         }
                     ]
                 }
