@@ -1,0 +1,219 @@
+{
+    "Header": {
+        "WKitJsonVersion": "0.0.3",
+        "GameVersion": 1600,
+        "DataType": "CR2W"
+    },
+    "Data": {
+        "Version": 195,
+        "BuildVersion": 0,
+        "RootChunk": {
+            "$type": "JsonResource",
+            "cookingPlatform": "PLATFORM_PC",
+            "root": {
+                "HandleId": "0",
+                "Data": {
+                    "$type": "localizationPersistenceOnScreenEntries",
+                    "entries": [
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-category-respecCost",
+                            "femaleVariant": "Custo de Respeito"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-category-playerExperience",
+                            "femaleVariant": "Experiência - Jogador"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-category-skillsExperience",
+                            "femaleVariant": "Experiência - Habilidades"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-NoRespecCost",
+                            "femaleVariant": "Sem Custo de Respeito"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-NoRespecCost",
+                            "femaleVariant": "Não haverá custo para redefinir os pontos de habilidade. O valor no multiplicador abaixo será ignorado."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multRespecCost",
+                            "femaleVariant": "Multiplicador"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multRespecCost",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-useFlexXP",
+                            "femaleVariant": "Usar Flex XP"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-useFlexXP",
+                            "femaleVariant": "A experiência adquirida para todas as skills do jogador compartilharão o mesmo multiplicador."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multFlex",
+                            "femaleVariant": "Multiplicador Flex"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multFlex",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multLevel",
+                            "femaleVariant": "Level"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multLevel",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multStreetCred",
+                            "femaleVariant": "Credibilidade"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multStreetCred",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multAssault",
+                            "femaleVariant": "Assalto"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multAssault",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multAthletics",
+                            "femaleVariant": "Atletismo"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multAthletics",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multBrawling",
+                            "femaleVariant": "Briga"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multBrawling",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multColdBlood",
+                            "femaleVariant": "Sangue frio"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multColdBlood",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multCombatHacking",
+                            "femaleVariant": "Hack de Combate"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multCombatHacking",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multCrafting",
+                            "femaleVariant": "Arte"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multCrafting",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multDemolition",
+                            "femaleVariant": "Demolição"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multDemolition",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multEngineering",
+                            "femaleVariant": "Engenharia"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multEngineering",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multGunslinger",
+                            "femaleVariant": "Atirador"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multGunslinger",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multHacking",
+                            "femaleVariant": "Hackear"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multHacking",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multKenjutsu",
+                            "femaleVariant": "Kenjutsu"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multKenjutsu",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multStealth",
+                            "femaleVariant": "Furtividade"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multStealth",
+                            "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo."
+                        }
+                    ]
+                }
+            }
+        },
+        "EmbeddedFiles": []
+    }
+}

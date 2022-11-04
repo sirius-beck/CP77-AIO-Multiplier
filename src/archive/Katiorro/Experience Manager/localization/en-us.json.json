@@ -1,0 +1,219 @@
+{
+    "Header": {
+        "WKitJsonVersion": "0.0.3",
+        "GameVersion": 1600,
+        "DataType": "CR2W"
+    },
+    "Data": {
+        "Version": 195,
+        "BuildVersion": 0,
+        "RootChunk": {
+            "$type": "JsonResource",
+            "cookingPlatform": "PLATFORM_PC",
+            "root": {
+                "HandleId": "0",
+                "Data": {
+                    "$type": "localizationPersistenceOnScreenEntries",
+                    "entries": [
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-category-respecCost",
+                            "femaleVariant": "Respec Cost"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-category-playerExperience",
+                            "femaleVariant": "Experience - Player"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-category-skillsExperience",
+                            "femaleVariant": "Experience - Skills"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-NoRespecCost",
+                            "femaleVariant": "No Respec Cost"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-NoRespecCost",
+                            "femaleVariant": "There will be no cost to reset skill points. The value in the multiplier below will be ignored."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multRespecCost",
+                            "femaleVariant": "Multiplier"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multRespecCost",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-useFlexXP",
+                            "femaleVariant": "Use flex XP"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-useFlexXP",
+                            "femaleVariant": "The experience gained for the level and all player skills will share the same multiplier."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multFlex",
+                            "femaleVariant": "Flex Multiplier"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multFlex",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multLevel",
+                            "femaleVariant": "Level"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multLevel",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multStreetCred",
+                            "femaleVariant": "Street Cred"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multStreetCred",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multAssault",
+                            "femaleVariant": "Assault"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multAssault",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multAthletics",
+                            "femaleVariant": "Athletics"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multAthletics",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multBrawling",
+                            "femaleVariant": "Brawling"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multBrawling",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multColdBlood",
+                            "femaleVariant": "Cold Blood"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multColdBlood",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multCombatHacking",
+                            "femaleVariant": "Combat Hacking"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multCombatHacking",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multCrafting",
+                            "femaleVariant": "Crafting"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multCrafting",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multDemolition",
+                            "femaleVariant": "Demolition"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multDemolition",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multEngineering",
+                            "femaleVariant": "Engineering"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multEngineering",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multGunslinger",
+                            "femaleVariant": "Gunslinger"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multGunslinger",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multHacking",
+                            "femaleVariant": "Hacking"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multHacking",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multKenjutsu",
+                            "femaleVariant": "Kenjutsu"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multKenjutsu",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-displayName-multStealth",
+                            "femaleVariant": "Stealth"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "em-ms-desc-multStealth",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                        }
+                    ]
+                }
+            }
+        },
+        "EmbeddedFiles": []
+    }
+}
