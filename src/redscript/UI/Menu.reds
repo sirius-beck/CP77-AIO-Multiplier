@@ -18,6 +18,23 @@ public class RespecModSettings {
     let multiplierRespecCost: Float = 1.0;
 }
 
+public class DevPointsQuantitySettings {
+    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
+    @runtimeProperty("ModSettings.category", "UI-AIO-category-DevPointsQuantity")
+    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-EnableDevPointsQuantity")
+    @runtimeProperty("ModSettings.description", "UI-AIO-desc-EnableDevPointsQuantity")
+    let enableDevPointsQuantity: Bool = false;
+
+    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
+    @runtimeProperty("ModSettings.category", "UI-AIO-category-DevPointsQuantity")
+    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-MultDevPointsQuantity")
+    @runtimeProperty("ModSettings.description", "UI-AIO-desc-MultDevPointsQuantity")
+    @runtimeProperty("ModSettings.step", "1")
+    @runtimeProperty("ModSettings.min", "1")
+    @runtimeProperty("ModSettings.max", "20")
+    let multiplierDevPointsQuantity: Int32 = 1;
+}
+
 public class MoneyMultiplierSettings {
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
     @runtimeProperty("ModSettings.category", "UI-AIO-category-itemsMult")
@@ -27,23 +44,6 @@ public class MoneyMultiplierSettings {
     @runtimeProperty("ModSettings.min", "1.0")
     @runtimeProperty("ModSettings.max", "500.0")
     let multiplierEddies: Float = 1.0;
-}
-
-public class DevPointsQuantitySettings {
-    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
-    @runtimeProperty("ModSettings.category", "UI-AIO-category-itemsMult")
-    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-EnableDevPointsQuantity")
-    @runtimeProperty("ModSettings.description", "UI-AIO-desc-EnableDevPointsQuantity")
-    let enableDevPointsQuantity: Bool = false;
-
-    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
-    @runtimeProperty("ModSettings.category", "UI-AIO-category-itemsMult")
-    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-MultDevPointsQuantity")
-    @runtimeProperty("ModSettings.description", "UI-AIO-desc-MultDevPointsQuantity")
-    @runtimeProperty("ModSettings.step", "1")
-    @runtimeProperty("ModSettings.min", "1")
-    @runtimeProperty("ModSettings.max", "20")
-    let multiplierDevPointsQuantity: Int32 = 1;
 }
 
 public class PlayerExperienceModSettings {

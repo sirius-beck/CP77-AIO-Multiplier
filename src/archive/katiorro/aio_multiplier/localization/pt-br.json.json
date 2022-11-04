@@ -232,23 +232,28 @@
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-category-DevPointsQuantity",
+                            "femaleVariant": "Pontos de Desenvolvimento e Atributo Por Level"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-EnableDevPointsQuantity",
-                            "femaleVariant": "Pontos de Desenvolvimento Por Level - Habilitar"
+                            "femaleVariant": "Habilitar"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-EnableDevPointsQuantity",
-                            "femaleVariant": "Ativar ou desativar a quantidade de pontos de desenvolvimentos por level definidos no campo abaixo."
+                            "femaleVariant": "Ativar ou desativar a quantidade de pontos de desenvolvimento e atributo por level definidos no campo abaixo."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-MultDevPointsQuantity",
-                            "femaleVariant": "Pontos de Desenvolvimento Por Level - Quantidade"
+                            "femaleVariant": "Quantidade"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-MultDevPointsQuantity",
-                            "femaleVariant": "Quantidade de pontos de desenvolvimento que o jogador ganhará por level."
+                            "femaleVariant": "Quantidade de pontos de desenvolvimento e atributo que o jogador ganhará por level."
                         }
                     ]
                 }

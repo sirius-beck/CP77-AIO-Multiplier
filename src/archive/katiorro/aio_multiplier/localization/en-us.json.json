@@ -232,23 +232,28 @@
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-category-DevPointsQuantity",
+                            "femaleVariant": "Development Points Per Level"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-EnableDevPointsQuantity",
-                            "femaleVariant": "Development Points Per Level - Enable"
+                            "femaleVariant": "Enable"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-EnableDevPointsQuantity",
-                            "femaleVariant": "Activate or deactivate the amount of development points per level defined in the field below."
+                            "femaleVariant": "Activate or deactivate the amount of development and perk points per level defined in the field below."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-MultDevPointsQuantity",
-                            "femaleVariant": "Development Points Per Level - Amount"
+                            "femaleVariant": "Amount"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-MultDevPointsQuantity",
-                            "femaleVariant": "Amount of development points the player will earn per level."
+                            "femaleVariant": "Amount of development and perk points the player will earn per level."
                         }
                     ]
                 }
