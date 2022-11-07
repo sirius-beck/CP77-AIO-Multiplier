@@ -19,13 +19,13 @@ public class AIODevPoints {
     let devPointsPerLevel: Int32;
     let changeDevPoints: Bool;
 
-    private func SetNewValue(oldValue: Int32, pointType: gamedataDevelopmentPointType) -> Int32 {
+    private static func SetNewValue(oldValue: Int32, pointType: gamedataDevelopmentPointType) -> Int32 {
         let newValue: Int32;
 
         if Equals(pointType, gamedataDevelopmentPointType.Attribute) {
-            newValue = this.GetDevPointsPerLevel(0);
+            newValue = AIODevPoints.GetDevPointsPerLevel(0);
         } else {
-            newValue = this.GetDevPointsPerLevel(1);
+            newValue = AIODevPoints.GetDevPointsPerLevel(1);
         }
 
         if newValue > oldValue {
@@ -35,7 +35,7 @@ public class AIODevPoints {
         }
     }
 
-    private func GetDevPointsPerLevel(type: Int32) -> Int32 {
+    private static func GetDevPointsPerLevel(type: Int32) -> Int32 {
         let aioInit = new AIOInit();
         aioInit.setup("DevPointsQuantitySettings");
         

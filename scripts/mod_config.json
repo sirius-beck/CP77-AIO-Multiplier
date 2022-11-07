@@ -1,10 +1,8 @@
 {
-    "name": "Experience_Manager",
+    "name": "AIO Multiplier",
     "version": "1.0.0",
     "isRedmod": false,
     "externals": {
-        "bundleFile": "deps\\final.redscripts",
-        "wolvenkitCLI": "X:\\Mod Tools\\02 - Cyberpunk 2077\\WolvenKit\\CLI\\WolvenKit.CLI.exe",
-        "redscriptCLI": "X:\\Mod Tools\\02 - Cyberpunk 2077\\Redscript\\redscript-cli.exe"
+        "bundleFile": "deps\\final.redscripts"
     }
 }

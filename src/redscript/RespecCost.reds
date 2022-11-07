@@ -12,7 +12,7 @@ public final const func GetTotalRespecCost() -> Int32 {
 }
 
 public class AIORespecCost {
-    private func NewRespecCost(cost: Int32) -> Int32 {
+    private static func NewRespecCost(cost: Int32) -> Int32 {
         let aioInit = new AIOInit();
         aioInit.setup("RespecCostSettings");
 

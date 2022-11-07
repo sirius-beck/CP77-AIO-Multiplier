@@ -63,7 +63,7 @@ public final const func AddExperience(amount: Int32, type: gamedataProficiencyTy
 }
 
 public class AIOXPMultiplier {
-  private func GetMultiplier(amount: Int32, type: gamedataProficiencyType) -> Float {
+  private static func GetMultiplier(amount: Int32, type: gamedataProficiencyType) -> Float {
     let aioInit = new AIOInit();
     aioInit.setup("PlayerExperienceModSettings");
     aioInit.setup("SkillsExperienceModSettings");
@@ -107,8 +107,8 @@ public class AIOXPMultiplier {
     }
   }
 
-  public func NewXPAmount(amount: Int32, type: gamedataProficiencyType) -> Int32 {
-    let xpValue: Int32 = Cast<Int32>(Cast<Float>(amount) * this.GetMultiplier(amount, type));
+  public static func NewXPAmount(amount: Int32, type: gamedataProficiencyType) -> Int32 {
+    let xpValue: Int32 = Cast<Int32>(Cast<Float>(amount) * AIOXPMultiplier.GetMultiplier(amount, type));
 
     return xpValue;
   }
