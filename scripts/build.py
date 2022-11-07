@@ -24,26 +24,34 @@ class ModManager():
         else:
             self.setConfig('create')
         
-        self.menu()
+        # self.menu()
     
     def menu(self):
         system('cls')
         print('| MOD MANAGER')
-        print('|- 1. Change mod settings')
-        print('|- 2. Convert json to CR2W files')
-        print('|- 3. Build mod')
+        print('|- 1. New project')
+        print('|- 2. Edit project')
+        print('|- 3. Pack mod')
+        print('|- 4. Pack mod and exit')
+        print('|- 5. Exit')
         option = int(input('|\n|- Enter the desired option number: '))
 
         if option == 1:
-            print('\nComing soon..\nChange current settings to mod by editing "mod_config.json" file.')
+            print('\nComing soon...\nUse option 3 or 4 to package the mod.')
             sleep(1.5)
             self.menu()
-        elif option == 2:
-            self.convert()
-        elif option == 3:
-            self.pack()
-        else:
+        if option == 2:
+            print('\nComing soon...\nChange current settings to mod by editing "mod_config.json" file.')
+            sleep(1.5)
             self.menu()
+        elif option == 3:
+            self.run()
+            self.pack(0)
+        elif option == 4:
+            self.run()
+            self.pack(1)
+        else:
+            exit()
     
     def setConfig(self, key):
         if key != 'create':
@@ -156,10 +164,7 @@ class ModManager():
             with open('scripts/mod_config.json', 'w') as file:
                 json.dump(configData, file, indent=4)
     
-    def convert(self):
-        pass
-    
-    def pack(self):
+    def pack(self, mode):
         if path.exists('src/redscript'):
             i = 0
             logFile = f'{self.name}_[{str(i)}].log'
@@ -180,11 +185,9 @@ class ModManager():
             else:
                 system(f'xcopy /Y /D /S /I src\\redscript "build\\r6\\scripts\\{self.name}"')
         
-        if path.exists('src/archivexl'):
-            system(f'xcopy /Y /D /S /I src\\archivexl "build\\archive\\pc\\mod"')
-        
         if self.isRedmod:
             if path.exists('src/archive'):
+                system(f'wolvenkit.cli.exe cr2w src\\archive -d -o "build\\mods\\{self.name}\\archives\\{self.name}"')
                 system(f'xcopy /Y /D /S /I src\\archive "build\\mods\\{self.name}\\archives\\{self.name}"')
                 system(f'wolvenkit.cli.exe pack "build\\mods\\{self.name}\\archives\\{self.name}"')
                 system(f'rmdir /Q /S "build\\mods\\{self.name}\\archives\\{self.name}"')
@@ -199,13 +202,22 @@ class ModManager():
                     json.dump(infoData, file, indent=4)
         else:
             if path.exists('src/archive'):
+                system(f'wolvenkit.cli.exe cr2w src\\archive -d -o "build\\archive\\pc\\mod\\{self.name}"')
                 system(f'xcopy /Y /D /S /I src\\archive "build\\archive\\pc\\mod\\{self.name}"')
                 system(f'wolvenkit.cli.exe pack "build\\archive\\pc\\mod\\{self.name}"')
                 system(f'rmdir /Q /S "build\\archive\\pc\\mod\\{self.name}"')
         
-        print(f'\n\n>> The "{self.name}" project was packaged in the "build" folder. Press a key to exit...')
-        system('pause >nul')
-        exit()
+        if path.exists('src/archivexl'):
+            system(f'xcopy /Y /D /S /I src\\archivexl "build\\archive\\pc\\mod"')
+        
+        if mode == 0:
+            print(f'\n\n>> The "{self.name}" project was packaged in the "build" folder.')
+            sleep(1.5)
+            self.menu()
+        else:
+            print(f'\n\n>> The "{self.name}" project was packaged in the "build" folder. Press a key to exit...')
+            system('pause >nul')
+            exit()
 
 
 
