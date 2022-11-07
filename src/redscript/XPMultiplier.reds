@@ -1,4 +1,5 @@
-import AIOMultiplier.Init.*
+import AIOMultiplier.UI.PlayerExperienceModSettings
+import AIOMultiplier.UI.SkillsExperienceModSettings
 
 @replaceMethod(PlayerDevelopmentData)
 public final const func AddExperience(amount: Int32, type: gamedataProficiencyType, telemetryGainReason: telemetryLevelGainReason) -> Void {
@@ -64,44 +65,43 @@ public final const func AddExperience(amount: Int32, type: gamedataProficiencyTy
 
 public class AIOXPMultiplier {
   private static func GetMultiplier(amount: Int32, type: gamedataProficiencyType) -> Float {
-    let aioInit = new AIOInit();
-    aioInit.setup("PlayerExperienceModSettings");
-    aioInit.setup("SkillsExperienceModSettings");
+    let playerExperienceModSettings = new PlayerExperienceModSettings();
+    let skillsExperienceModSettings = new SkillsExperienceModSettings();
 
-    if (aioInit.useFlexXP) {
+    if (skillsExperienceModSettings.useFlexXP) {
       switch type {
-        case gamedataProficiencyType.Level: return aioInit.multiplierLevel;
-        case gamedataProficiencyType.StreetCred: return aioInit.multiplierStreetCred;
-        case gamedataProficiencyType.Assault: return aioInit.multiplierFlex;
-        case gamedataProficiencyType.Athletics: return aioInit.multiplierFlex;
-        case gamedataProficiencyType.Brawling: return aioInit.multiplierFlex;
-        case gamedataProficiencyType.ColdBlood: return aioInit.multiplierFlex;
-        case gamedataProficiencyType.CombatHacking: return aioInit.multiplierFlex;
-        case gamedataProficiencyType.Crafting: return aioInit.multiplierFlex;
-        case gamedataProficiencyType.Demolition: return aioInit.multiplierFlex;
-        case gamedataProficiencyType.Engineering: return aioInit.multiplierFlex;
-        case gamedataProficiencyType.Gunslinger: return aioInit.multiplierFlex;
-        case gamedataProficiencyType.Hacking: return aioInit.multiplierFlex;
-        case gamedataProficiencyType.Kenjutsu: return aioInit.multiplierFlex;
-        case gamedataProficiencyType.Stealth: return aioInit.multiplierFlex;
+        case gamedataProficiencyType.Level: return playerExperienceModSettings.multiplierLevel;
+        case gamedataProficiencyType.StreetCred: return playerExperienceModSettings.multiplierStreetCred;
+        case gamedataProficiencyType.Assault: return skillsExperienceModSettings.multiplierFlex;
+        case gamedataProficiencyType.Athletics: return skillsExperienceModSettings.multiplierFlex;
+        case gamedataProficiencyType.Brawling: return skillsExperienceModSettings.multiplierFlex;
+        case gamedataProficiencyType.ColdBlood: return skillsExperienceModSettings.multiplierFlex;
+        case gamedataProficiencyType.CombatHacking: return skillsExperienceModSettings.multiplierFlex;
+        case gamedataProficiencyType.Crafting: return skillsExperienceModSettings.multiplierFlex;
+        case gamedataProficiencyType.Demolition: return skillsExperienceModSettings.multiplierFlex;
+        case gamedataProficiencyType.Engineering: return skillsExperienceModSettings.multiplierFlex;
+        case gamedataProficiencyType.Gunslinger: return skillsExperienceModSettings.multiplierFlex;
+        case gamedataProficiencyType.Hacking: return skillsExperienceModSettings.multiplierFlex;
+        case gamedataProficiencyType.Kenjutsu: return skillsExperienceModSettings.multiplierFlex;
+        case gamedataProficiencyType.Stealth: return skillsExperienceModSettings.multiplierFlex;
         default: return 1.0;
       }
     } else {
       switch type {
-        case gamedataProficiencyType.Level: return aioInit.multiplierLevel;
-        case gamedataProficiencyType.StreetCred: return aioInit.multiplierStreetCred;
-        case gamedataProficiencyType.Assault: return aioInit.multiplierAssault;
-        case gamedataProficiencyType.Athletics: return aioInit.multiplierAthletics;
-        case gamedataProficiencyType.Brawling: return aioInit.multiplierBrawling;
-        case gamedataProficiencyType.ColdBlood: return aioInit.multiplierColdBlood;
-        case gamedataProficiencyType.CombatHacking: return aioInit.multiplierCombatHacking;
-        case gamedataProficiencyType.Crafting: return aioInit.multiplierCrafting;
-        case gamedataProficiencyType.Demolition: return aioInit.multiplierDemolition;
-        case gamedataProficiencyType.Engineering: return aioInit.multiplierEngineering;
-        case gamedataProficiencyType.Gunslinger: return aioInit.multiplierGunslinger;
-        case gamedataProficiencyType.Hacking: return aioInit.multiplierHacking;
-        case gamedataProficiencyType.Kenjutsu: return aioInit.multiplierKenjutsu;
-        case gamedataProficiencyType.Stealth: return aioInit.multiplierStealth;
+        case gamedataProficiencyType.Level: return playerExperienceModSettings.multiplierLevel;
+        case gamedataProficiencyType.StreetCred: return playerExperienceModSettings.multiplierStreetCred;
+        case gamedataProficiencyType.Assault: return skillsExperienceModSettings.multiplierAssault;
+        case gamedataProficiencyType.Athletics: return skillsExperienceModSettings.multiplierAthletics;
+        case gamedataProficiencyType.Brawling: return skillsExperienceModSettings.multiplierBrawling;
+        case gamedataProficiencyType.ColdBlood: return skillsExperienceModSettings.multiplierColdBlood;
+        case gamedataProficiencyType.CombatHacking: return skillsExperienceModSettings.multiplierCombatHacking;
+        case gamedataProficiencyType.Crafting: return skillsExperienceModSettings.multiplierCrafting;
+        case gamedataProficiencyType.Demolition: return skillsExperienceModSettings.multiplierDemolition;
+        case gamedataProficiencyType.Engineering: return skillsExperienceModSettings.multiplierEngineering;
+        case gamedataProficiencyType.Gunslinger: return skillsExperienceModSettings.multiplierGunslinger;
+        case gamedataProficiencyType.Hacking: return skillsExperienceModSettings.multiplierHacking;
+        case gamedataProficiencyType.Kenjutsu: return skillsExperienceModSettings.multiplierKenjutsu;
+        case gamedataProficiencyType.Stealth: return skillsExperienceModSettings.multiplierStealth;
         default: return 1.0;
       }
     }

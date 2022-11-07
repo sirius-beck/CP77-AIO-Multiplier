@@ -1,4 +1,4 @@
-import AIOMultiplier.Init.*
+import AIOMultiplier.UI.RespecCostSettings
 
 @replaceMethod(PlayerDevelopmentData)
 public final const func GetTotalRespecCost() -> Int32 {
@@ -13,10 +13,9 @@ public final const func GetTotalRespecCost() -> Int32 {
 
 public class AIORespecCost {
     private static func NewRespecCost(cost: Int32) -> Int32 {
-        let aioInit = new AIOInit();
-        aioInit.setup("RespecCostSettings");
+        let respecCostSettings = new RespecCostSettings();
 
-        if(aioInit.noRespecCost) {
+        if(respecCostSettings.noRespecCost) {
             cost = 0;
         }
 

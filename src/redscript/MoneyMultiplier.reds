@@ -1,5 +1,5 @@
 module AIOMultiplier.Eddies
-import AIOMultiplier.Init.*
+import AIOMultiplier.UI.ItemMultiplierSettings
 
 @addField(PlayerPuppet)
 private let aioMoneyMultiplier: ref<AIOMoneyMultiplier>;
@@ -11,12 +11,10 @@ protected cb func OnItemAddedToInventory(evt: ref<ItemAddedEvent>) -> Bool {
     if Equals(evt.itemID, MarketSystem.Money()) {
         if !IsDefined(this.aioMoneyMultiplier) {
             this.aioMoneyMultiplier = new AIOMoneyMultiplier();
-            this.aioMoneyMultiplier.player = this;
-            this.aioMoneyMultiplier.eds = GameInstance.GetTransactionSystem(this.GetGame());
         }
 
         if this.aioMoneyMultiplier.Continue() {
-            this.aioMoneyMultiplier.AddMoney(evt.itemData.GetQuantity(), evt.currentQuantity);
+            this.aioMoneyMultiplier.AddMoney(evt.itemData.GetQuantity(), evt.currentQuantity, this, GameInstance.GetTransactionSystem(this.GetGame()));
             this.aioMoneyMultiplier.continueAdd = true;
         } else {
             this.aioMoneyMultiplier.continueAdd = false;
@@ -25,23 +23,20 @@ protected cb func OnItemAddedToInventory(evt: ref<ItemAddedEvent>) -> Bool {
 }
 
 public class AIOMoneyMultiplier {
-    let player: ref<PlayerPuppet>;
-    let eds: ref<TransactionSystem>;
     let continueAdd: Bool = false;
 
     private func GetMultiplier() -> Float {
-        let aioInit = new AIOInit();
-        aioInit.setup("ItemMultiplierSettings");
+        let itemMultiplierSettings = new ItemMultiplierSettings();
 
-        return aioInit.multiplierMoney;
+        return itemMultiplierSettings.multiplierMoney;
     }
     
-    public func AddMoney(newMoneyQuantity: Int32, oldMoneyQuantity: Int32) -> Void {
+    private func AddMoney(newMoneyQuantity: Int32, oldMoneyQuantity: Int32, player: ref<PlayerPuppet>, transactionSystem: ref<TransactionSystem>) -> Void {
         let eddiesEarned: Int32 = newMoneyQuantity - oldMoneyQuantity;
         let currentEddiesEarned: Int32 = (Cast<Int32>(Cast<Float>(eddiesEarned) * this.GetMultiplier())) - eddiesEarned;
 
         if currentEddiesEarned > 0 {
-            this.eds.GiveItem(this.player, MarketSystem.Money(), currentEddiesEarned);
+            transactionSystem.GiveItem(player, MarketSystem.Money(), currentEddiesEarned);
         }
     }
 

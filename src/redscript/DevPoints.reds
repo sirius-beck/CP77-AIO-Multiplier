@@ -1,4 +1,4 @@
-import AIOMultiplier.Init.*
+import AIOMultiplier.UI.DevPointsQuantitySettings
 
 @replaceMethod(PlayerDevelopmentData)
 private final const func ModifyDevPoints(type: gamedataProficiencyType, level: Int32) -> Void {
@@ -16,9 +16,6 @@ private final const func ModifyDevPoints(type: gamedataProficiencyType, level: I
 }
 
 public class AIODevPoints {
-    let devPointsPerLevel: Int32;
-    let changeDevPoints: Bool;
-
     private static func SetNewValue(oldValue: Int32, pointType: gamedataDevelopmentPointType) -> Int32 {
         let newValue: Int32;
 
@@ -36,12 +33,11 @@ public class AIODevPoints {
     }
 
     private static func GetDevPointsPerLevel(type: Int32) -> Int32 {
-        let aioInit = new AIOInit();
-        aioInit.setup("DevPointsQuantitySettings");
+        let devPointsQuantitySettings = new DevPointsQuantitySettings();
         
         switch type{
-            case 0: return aioInit.attributePointsPerLevel;
-            case 1: return aioInit.perkPointsPerLevel;
+            case 0: return devPointsQuantitySettings.attributePointsPerLevel;
+            case 1: return devPointsQuantitySettings.perkPointsPerLevel;
             default: return 1;
         }
     }
