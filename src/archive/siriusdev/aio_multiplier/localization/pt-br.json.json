@@ -48,7 +48,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-PerkPointsPerLevel",
-                            "femaleVariant": "Pontos de Vantagem"
+                            "femaleVariant": "Pontos de Vantagem Por Level"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
