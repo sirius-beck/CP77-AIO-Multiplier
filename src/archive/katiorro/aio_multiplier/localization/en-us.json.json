@@ -22,73 +22,58 @@
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-category-respecCost",
-                            "femaleVariant": "Respec Cost"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-category-itemsMult",
-                            "femaleVariant": "Items Multipliers"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-category-playerExperience",
-                            "femaleVariant": "Experience Multipliers - Player"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-category-skillsExperience",
-                            "femaleVariant": "Experience Multipliers - Skills"
+                            "secondaryKey": "UI-AIO-category-DevPoints",
+                            "femaleVariant": "Development Points"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-NoRespecCost",
-                            "femaleVariant": "No Respec Cost"
+                            "femaleVariant": "No Respect Cost"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-NoRespecCost",
-                            "femaleVariant": "There will be no cost to reset skill points. The value in the multiplier below will be ignored."
+                            "femaleVariant": "There will be no cost to reset development points."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-displayName-multRespecCost",
-                            "femaleVariant": "Multiplier"
+                            "secondaryKey": "UI-AIO-displayName-AttributePointsPerLevel",
+                            "femaleVariant": "Attribute Points Per Level"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-desc-multRespecCost",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "secondaryKey": "UI-AIO-desc-AttributePointsPerLevel",
+                            "femaleVariant": "Amount of attribute points the player will gain per level.\n(To disable, leave the value at: 1)"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-PerkPointsPerLevel",
+                            "femaleVariant": "Perk Points Per Level"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-PerkPointsPerLevel",
+                            "femaleVariant": "Amount of perk points the player will gain per level.\n(To disable, leave the value at: 1)"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-category-itemsMult",
+                            "femaleVariant": "Itens Multiplier"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-moneyMult",
-                            "femaleVariant": "Money"
+                            "femaleVariant": "Eddies"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-moneyMult",
-                            "femaleVariant": "The money gained will be multiplied by the value of this field."
+                            "femaleVariant": "The eddies won will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-displayName-useFlexXP",
-                            "femaleVariant": "Use flex XP"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-desc-useFlexXP",
-                            "femaleVariant": "The experience gained for the level and all player skills will share the same multiplier."
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-displayName-multFlex",
-                            "femaleVariant": "Flex Multiplier"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-desc-multFlex",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "secondaryKey": "UI-AIO-category-playerExperience",
+                            "femaleVariant": "Experience - Player"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -98,7 +83,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multLevel",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -108,7 +93,32 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multStreetCred",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-category-skillsExperience",
+                            "femaleVariant": "Experience - Skills"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-useFlexXP",
+                            "femaleVariant": "Use Flex XP"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-useFlexXP",
+                            "femaleVariant": "Experience gained for all player skills will share the same multiplier."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-multFlex",
+                            "femaleVariant": "Flex Multiplier"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-multFlex",
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -118,7 +128,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multAssault",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -128,7 +138,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multAthletics",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -138,7 +148,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multBrawling",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -148,7 +158,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multColdBlood",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -158,7 +168,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multCombatHacking",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -168,7 +178,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multCrafting",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -178,7 +188,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multDemolition",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -188,7 +198,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multEngineering",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -198,7 +208,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multGunslinger",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -208,7 +218,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multHacking",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -218,7 +228,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multKenjutsu",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -228,32 +238,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multStealth",
-                            "femaleVariant": "The experience gained will be multiplied by the value of this field."
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-category-DevPointsQuantity",
-                            "femaleVariant": "Development Points Per Level"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-displayName-EnableDevPointsQuantity",
-                            "femaleVariant": "Enable"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-desc-EnableDevPointsQuantity",
-                            "femaleVariant": "Activate or deactivate the amount of development and perk points per level defined in the field below."
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-displayName-MultDevPointsQuantity",
-                            "femaleVariant": "Amount"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-desc-MultDevPointsQuantity",
-                            "femaleVariant": "Amount of development and perk points the player will earn per level."
+                            "femaleVariant": "The experience gained will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
                         }
                     ]
                 }

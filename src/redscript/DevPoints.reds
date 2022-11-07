@@ -1,17 +1,12 @@
-import AIOMultiplier.UI.DevPointsQuantitySettings
+import AIOMultiplier.Init.*
 
 @replaceMethod(PlayerDevelopmentData)
 private final const func ModifyDevPoints(type: gamedataProficiencyType, level: Int32) -> Void {
     let val: Int32;
     let i: Int32 = 0;
-    let aioDevPoints = new AIODevPoints();
 
     while i <= EnumInt(gamedataDevelopmentPointType.Count) {
-        if aioDevPoints.CheckIfModify() {
-            val = aioDevPoints.devPointsPerLevel;
-        } else {
-            val = this.GetDevPointsForLevel(level, type, IntEnum<gamedataDevelopmentPointType>(i));
-        }
+        val = AIODevPoints.SetNewValue(this.GetDevPointsForLevel(level, type, IntEnum<gamedataDevelopmentPointType>(i)), IntEnum<gamedataDevelopmentPointType>(i));
         
         if val > 0 {
         this.AddDevelopmentPoints(val, IntEnum<gamedataDevelopmentPointType>(i));
@@ -24,20 +19,30 @@ public class AIODevPoints {
     let devPointsPerLevel: Int32;
     let changeDevPoints: Bool;
 
-    public func CheckIfModify() -> Bool {
-        this.GetDevPointsQuantity();
+    private func SetNewValue(oldValue: Int32, pointType: gamedataDevelopmentPointType) -> Int32 {
+        let newValue: Int32;
 
-        return this.changeDevPoints;
+        if Equals(pointType, gamedataDevelopmentPointType.Attribute) {
+            newValue = this.GetDevPointsPerLevel(0);
+        } else {
+            newValue = this.GetDevPointsPerLevel(1);
+        }
+
+        if newValue > oldValue {
+            return newValue;
+        } else {
+            return oldValue;
+        }
     }
 
-    private func GetDevPointsQuantity() -> Void {
-        let devPointsQuantity = new DevPointsQuantitySettings();
-
-        if devPointsQuantity.enableDevPointsQuantity {
-            this.devPointsPerLevel = devPointsQuantity.multiplierDevPointsQuantity;
-            this.changeDevPoints = true;
-        } else {
-            this.changeDevPoints = false;
+    private func GetDevPointsPerLevel(type: Int32) -> Int32 {
+        let aioInit = new AIOInit();
+        aioInit.setup("DevPointsQuantitySettings");
+        
+        switch type{
+            case 0: return aioInit.attributePointsPerLevel;
+            case 1: return aioInit.perkPointsPerLevel;
+            default: return 1;
         }
     }
 }

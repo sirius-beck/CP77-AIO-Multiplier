@@ -1,4 +1,4 @@
-import AIOMultiplier.UI.RespecModSettings
+import AIOMultiplier.Init.*
 
 @replaceMethod(PlayerDevelopmentData)
 public final const func GetTotalRespecCost() -> Int32 {
@@ -6,19 +6,18 @@ public final const func GetTotalRespecCost() -> Int32 {
     let singlePerkPrice: Int32 = Cast<Int32>(TweakDBInterface.GetConstantStatModifierRecord(t"Price.RespecSinglePerk").Value());
     let cost: Int32 = basePrice + singlePerkPrice * (this.GetSpentPerkPoints() + this.GetSpentTraitPoints());
 
-    cost = EM_RespecCost.NewRespecCost(cost);
+    cost = AIORespecCost.NewRespecCost(cost);
 
     return cost;
 }
 
-public class EM_RespecCost {
-    private static func NewRespecCost(cost: Int32) -> Int32 {
-        let respecModSettings = new RespecModSettings();
+public class AIORespecCost {
+    private func NewRespecCost(cost: Int32) -> Int32 {
+        let aioInit = new AIOInit();
+        aioInit.setup("RespecCostSettings");
 
-        if(respecModSettings.freeRespecCost) {
+        if(aioInit.noRespecCost) {
             cost = 0;
-        } else {
-            cost = Cast<Int32>(Cast<Float>(cost) * respecModSettings.multiplierRespecCost);
         }
 
         return cost;
