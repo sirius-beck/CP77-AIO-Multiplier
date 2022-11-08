@@ -1,5 +1,5 @@
 module AIOMultiplier.Eddies
-import AIOMultiplier.UI.ItemMultiplierSettings
+import AIOMultiplier.UI.MoneyMultiplierSettings
 
 @addField(PlayerPuppet)
 private let aioMoneyMultiplier: ref<AIOMoneyMultiplier>;
@@ -26,9 +26,9 @@ public class AIOMoneyMultiplier {
     let continueAdd: Bool = false;
 
     private func GetMultiplier() -> Float {
-        let itemMultiplierSettings = new ItemMultiplierSettings();
+        let moneyMultiplierSettings = new MoneyMultiplierSettings();
 
-        return itemMultiplierSettings.multiplierMoney;
+        return moneyMultiplierSettings.multiplierMoney;
     }
     
     private func AddMoney(newMoneyQuantity: Int32, oldMoneyQuantity: Int32, player: ref<PlayerPuppet>, transactionSystem: ref<TransactionSystem>) -> Void {

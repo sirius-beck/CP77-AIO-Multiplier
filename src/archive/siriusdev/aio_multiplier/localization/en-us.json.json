@@ -72,6 +72,16 @@
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-disassembledMult",
+                            "femaleVariant": "Disassembled Items"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-disassembledMult",
+                            "femaleVariant": "Unmounted items won will be multiplied by the value of this field.\n(To disable, leave the value at: 1.0)"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-category-playerExperience",
                             "femaleVariant": "Experience - Player"
                         },

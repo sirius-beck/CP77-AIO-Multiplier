@@ -72,8 +72,18 @@
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-disassembledMult",
+                            "femaleVariant": "Itens Desmontados"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-disassembledMult",
+                            "femaleVariant": "Os itens desmontados ganhos serão multiplicados pelo valor deste campo.\n(Para desativar, deixe o valor em: 1.0)"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-category-playerExperience",
-                            "femaleVariant": "Experiência - Jogador"
+                            "femaleVariant": "Multiplicador de Experiência - Jogador"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -98,7 +108,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-category-skillsExperience",
-                            "femaleVariant": "Experiência - Habilidades"
+                            "femaleVariant": "Multiplicador de Experiência - Habilidades"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",

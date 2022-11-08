@@ -14,6 +14,7 @@ class ModManager():
         # self.redscriptCLI = ''
     
     def run(self):
+        system('cls')
         if path.isfile('scripts/mod_config.json'):
             self.name = self.setConfig('name')
             self.version = self.setConfig('version')
@@ -33,7 +34,8 @@ class ModManager():
         print('|- 2. Edit project')
         print('|- 3. Pack mod')
         print('|- 4. Pack mod and exit')
-        print('|- 5. Exit')
+        print('|- 5. Check redscript files')
+        print('|- 6. Exit')
         option = int(input('|\n|- Enter the desired option number: '))
 
         if option == 1:
@@ -50,10 +52,14 @@ class ModManager():
         elif option == 4:
             self.run()
             self.pack(1)
+        elif option == 5:
+            self.run()
+            self.lintRedsFiles()
         else:
             exit()
     
     def setConfig(self, key):
+        system('cls')
         if key != 'create':
             with open('scripts/mod_config.json', 'r') as file:
                 config = json.load(file)
@@ -165,6 +171,7 @@ class ModManager():
                 json.dump(configData, file, indent=4)
     
     def pack(self, mode):
+        system('cls')
         if path.exists('src/redscript'):
             i = 0
             logFile = f'{self.name}_[{str(i)}].log'
@@ -189,9 +196,9 @@ class ModManager():
         
         if self.isRedmod:
             if path.exists('src/archive'):
-                system(f'mkdir "build\\mods\\{self.name}\\archives\\{self.name}"')
-                system(f'WolvenKit.CLI.exe cr2w src\\archive -d -o "build\\mods\\{self.name}\\archives\\{self.name}"')
                 system(f'xcopy /Y /D /S /I src\\archive "build\\mods\\{self.name}\\archives\\{self.name}"')
+                system(f'WolvenKit.CLI.exe cr2w "build\\mods\\{self.name}\\archives\\{self.name}" -d')
+                system(f'del /F /S /Q "build\\mods\\{self.name}\\archives\\{self.name}\\*.json.json"')
                 system(f'WolvenKit.CLI.exe pack "build\\mods\\{self.name}\\archives\\{self.name}"')
                 system(f'rmdir /Q /S "build\\mods\\{self.name}\\archives\\{self.name}"')
 
@@ -205,9 +212,9 @@ class ModManager():
                     json.dump(infoData, file, indent=4)
         else:
             if path.exists('src/archive'):
-                system(f'mkdir "build\\archive\\pc\\mod\\{self.name}"')
-                system(f'WolvenKit.CLI.exe cr2w src\\archive -d -o "build\\archive\\pc\\mod\\{self.name}"')
                 system(f'xcopy /Y /D /S /I src\\archive "build\\archive\\pc\\mod\\{self.name}"')
+                system(f'WolvenKit.CLI.exe cr2w "build\\archive\\pc\\mod\\{self.name}" -d')
+                system(f'del /F /S /Q "build\\archive\\pc\\mod\\{self.name}\\*.json.json"')
                 system(f'WolvenKit.CLI.exe pack "build\\archive\\pc\\mod\\{self.name}"')
                 system(f'rmdir /Q /S "build\\archive\\pc\\mod\\{self.name}"')
         
@@ -215,13 +222,21 @@ class ModManager():
             system(f'xcopy /Y /D /S /I src\\archivexl "build\\archive\\pc\\mod"')
         
         if mode == 0:
-            print(f'\n\n>> The "{self.name}" project was packaged in the "build" folder.')
-            sleep(2)
+            print(f'\n\n>> The "{self.name}" project was packaged in the "build" folder. Press a key to return to the main menu...')
+            system('pause >nul')
             self.menu()
         else:
             print(f'\n\n>> The "{self.name}" project was packaged in the "build" folder. Press a key to exit...')
             system('pause >nul')
             exit()
+    
+    def lintRedsFiles(self):
+        system('cls')
+        system(f'redscript-cli.exe lint -s "src\\redscripts" -b "{self.bundleFile}"')
+        print(f'\n\n>> Press a key to return to the main menu...')
+        system('pause >nul')
+        self.menu()
+
 
 
 

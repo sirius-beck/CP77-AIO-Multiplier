@@ -29,15 +29,26 @@ public class DevPointsQuantitySettings {
     let perkPointsPerLevel: Int32 = 1;
 }
 
-public class ItemMultiplierSettings {
+public class MoneyMultiplierSettings {
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
     @runtimeProperty("ModSettings.category", "UI-AIO-category-itemsMult")
     @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-moneyMult")
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-moneyMult")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierMoney: Float = 1.0;
+}
+
+public class DisassembledItemsMultiplierSettings {
+    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
+    @runtimeProperty("ModSettings.category", "UI-AIO-category-itemsMult")
+    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-disassembledMult")
+    @runtimeProperty("ModSettings.description", "UI-AIO-desc-disassembledMult")
+    @runtimeProperty("ModSettings.step", "0.5")
+    @runtimeProperty("ModSettings.min", "1.0")
+    @runtimeProperty("ModSettings.max", "100.0")
+    let multiplierDisassembled: Float = 1.0;
 }
 
 public class PlayerExperienceModSettings {
@@ -47,7 +58,7 @@ public class PlayerExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multLevel")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierLevel: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -56,7 +67,7 @@ public class PlayerExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multStreetCred")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierStreetCred: Float = 1.0;
 }
 
@@ -73,7 +84,7 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multFlex")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierFlex: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -82,7 +93,7 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multAssault")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierAssault: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -91,7 +102,7 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multAthletics")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierAthletics: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -100,7 +111,7 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multBrawling")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierBrawling: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -109,7 +120,7 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multColdBlood")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierColdBlood: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -118,7 +129,7 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multCombatHacking")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierCombatHacking: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -127,7 +138,7 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multCrafting")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierCrafting: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -136,7 +147,7 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multDemolition")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierDemolition: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -145,7 +156,7 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multEngineering")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierEngineering: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -154,7 +165,7 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multGunslinger")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierGunslinger: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -163,7 +174,7 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multHacking")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierHacking: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -172,7 +183,7 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multKenjutsu")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierKenjutsu: Float = 1.0;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -181,6 +192,6 @@ public class SkillsExperienceModSettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-multStealth")
     @runtimeProperty("ModSettings.step", "0.5")
     @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "500.0")
+    @runtimeProperty("ModSettings.max", "100.0")
     let multiplierStealth: Float = 1.0;
 }
