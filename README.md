@@ -22,8 +22,7 @@ AIO Multiplier enables the customization of the game's multipliers, among other 
 
 ## Available languages
 * Brazilian portuguese
-* English
-<br>
+* English<br>
 (If you want to translate the mod to your language, I left a tutorial available on the mod's wiki on GitHub: [AIO Multiplier -Wiki](https://github.com/pySiriusDev/CP77-AIO-Multiplier/wiki/How-to-translate-this-mod))
 
 ## Installation
