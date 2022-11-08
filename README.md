@@ -11,9 +11,10 @@
 AIO Multiplier enables the customization of the game's multipliers, among other things, all configurable through the Mod Settings.
 
 ## Features
-* No respec cost
-* Attribute points per level
-* Perk points per level
+* Development points:
+  * No respec cost
+  * Attribute points per level
+  * Perk points per level
 * Multipliers:
   * Eddies
   * Disassembled items
@@ -31,6 +32,6 @@ Just extract the main file to the Cyberpunk 2077 root folder, or use [Vortex](ht
 ## Links
 * **[Modding Community](https://discord.gg/2YaYhgqHva)**
 * **[Discord Server](https://discord.gg/pVKQ7vzmKE)**
-* **[Instagram](https://instagram.com)**
+* **[Instagram](https://instagram.com/biellviana)**
 * **[Twitter](https://twitter.com/_katiorro)**
 * **[NexusMods's Profile](https://www.nexusmods.com/users/73453593)**
