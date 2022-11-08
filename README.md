@@ -35,7 +35,7 @@ The AIO Multiplier makes it possible to customize the game's multipliers, among 
 * **Low Multipliers Menu (optional file):** And for those who think 100 is too high, this file lowers the maximum value of each multiplier to **50**. Install the main file first and then this one.
 
 ## Installation
-[DOWNLOAD AT NEXUSMODS](https://www.nexusmods.com/cyberpunk2077/mods/6325)**<br>
+**[DOWNLOAD AT NEXUSMODS](https://www.nexusmods.com/cyberpunk2077/mods/6325)**<br>
 * **__Main File:__** Just extract the main file to the Cyberpunk 2077 root folder, or use [Vortex](https://www.nexusmods.com/site/mods/1?tab=files) (Recommended) for an automatic installation.
 * **__Optional Files:__** Just extract the main file to the Cyberpunk 2077 root folder and replace the previously installed main file, or use [Vortex](https://www.nexusmods.com/site/mods/1?tab=files) (Recommended) for an automatic installation and, when informed about the conflict between files in Vortex, just select the optional file as **`After`**. Install only ONE OF THE OPTIONAL FILES.
 
