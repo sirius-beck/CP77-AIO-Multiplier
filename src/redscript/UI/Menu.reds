@@ -16,7 +16,7 @@ public class DevPointsQuantitySettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-AttributePointsPerLevel")
     @runtimeProperty("ModSettings.step", "1")
     @runtimeProperty("ModSettings.min", "1")
-    @runtimeProperty("ModSettings.max", "20")
+    @runtimeProperty("ModSettings.max", "50")
     let attributePointsPerLevel: Int32 = 1;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
@@ -25,7 +25,7 @@ public class DevPointsQuantitySettings {
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-PerkPointsPerLevel")
     @runtimeProperty("ModSettings.step", "1")
     @runtimeProperty("ModSettings.min", "1")
-    @runtimeProperty("ModSettings.max", "20")
+    @runtimeProperty("ModSettings.max", "50")
     let perkPointsPerLevel: Int32 = 1;
 }
 
