@@ -4,6 +4,7 @@
 * [Description](https://github.com/pySiriusDev/CP77-AIO-Multiplier#description)
 * [Features](https://github.com/pySiriusDev/CP77-AIO-Multiplier#features)
 * [Available languages](https://github.com/pySiriusDev/CP77-AIO-Multiplier#available-languages)
+* [Files](https://github.com/pySiriusDev/CP77-AIO-Multiplier#files)
 * [Installation](https://github.com/pySiriusDev/CP77-AIO-Multiplier#installation)
 * [Links](https://github.com/pySiriusDev/CP77-AIO-Multiplier#links)
 
