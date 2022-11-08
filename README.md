@@ -11,14 +11,14 @@
 AIO Multiplier enables the customization of the game's multipliers, among other things, all configurable through the Mod Settings.
 
 ## Features
-* Sem custo de respeito
-* Pontos de atributos por nível
-* Pontos de vantagens por nível
-* Multiplicadores:
-  * Edinhos
-  * Itens desmontados
-  * Level do jogador
-  * Level de habilidades (Podendo ser configuradas cada uma delas separadamente ou através de um único multiplicador flex)
+* No respec cost
+* Attribute points per level
+* Perk points per level
+* Multipliers:
+  * Eddies
+  * Disassembled items
+  * Player level
+  * Skill Level (Can be configured each one separately or through a single flex multiplier)
 
 ## Available languages
 * Brazilian portuguese
