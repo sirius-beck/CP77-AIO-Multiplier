@@ -8,7 +8,7 @@
 * [Links](https://github.com/pySiriusDev/CP77-AIO-Multiplier#links)
 
 ## Description
-AIO Multiplier enables the customization of the game's multipliers, among other things, all configurable through the Mod Settings.
+The AIO Multiplier makes it possible to customize the game's multipliers, among other things such as: no respec cost; eddies multiplier; experience multiplier; multiplier of resources obtained by disassembling... All configurable through Mod Settings.
 
 ## Features
 * Development points:
