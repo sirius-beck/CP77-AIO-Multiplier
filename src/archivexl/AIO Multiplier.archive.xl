@@ -2,3 +2,5 @@ localization:
     onscreens:
         en-us: siriusdev\aio_multiplier\localization\en-us.json
         pt-br: siriusdev\aio_multiplier\localization\pt-br.json
+        de-de: siriusdev\aio_multiplier\localization\de-de.json
+		zh-tw: siriusdev\aio_multiplier\localization\zh-tw.json
