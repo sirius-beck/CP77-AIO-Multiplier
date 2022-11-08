@@ -26,8 +26,13 @@ The AIO Multiplier makes it possible to customize the game's multipliers, among 
 * English<br>
 (If you want to translate the mod to your language, I left a tutorial available on the mod's wiki on GitHub: [AIO Multiplier -Wiki](https://github.com/pySiriusDev/CP77-AIO-Multiplier/wiki/How-to-translate-this-mod))
 
+## Files
+* **__AIO Multiplier 2077 (main  file):__** Main file of the mod, the maximum value of each multiplier is **100**. You just need it for everything to go smoothly (along with the requirements, obviously).
+* **__High Multipliers Menu (optional file):__** For those who, for some reason, don't think the maximum of 100 for the multipliers is enough, this file increases the maximum value of the ModSettings multiplier options to **500**. Install the main file first and then this one.
+* **__Low Multipliers Menu (optional file):__** And for those who think 100 is too high, this file lowers the maximum value of each multiplier to **50**. Install the main file first and then this one.
 ## Installation
-Just extract the main file to the Cyberpunk 2077 root folder, or use [Vortex](https://www.nexusmods.com/site/mods/1?tab=files) (Recommended) for an automatic installation.
+* **__Main File:__** Just extract the main file to the Cyberpunk 2077 root folder, or use [Vortex](https://www.nexusmods.com/site/mods/1?tab=files) (Recommended) for an automatic installation.
+* **__Optional Files:__** Just extract the main file to the Cyberpunk 2077 root folder and replace the previously installed main file, or use [Vortex](https://www.nexusmods.com/site/mods/1?tab=files) (Recommended) for an automatic installation and, when informed about the conflict between files in Vortex, just select the optional file as **`After`**. Install only ONE OF THE OPTIONAL FILES.
 
 ## Links
 * **[Modding Community](https://discord.gg/2YaYhgqHva)**
