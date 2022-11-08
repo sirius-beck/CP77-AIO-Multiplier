@@ -15,10 +15,10 @@ AIO Multiplier enables the customization of the game's multipliers, among other 
 * Pontos de atributos por nível
 * Pontos de vantagens por nível
 * Multiplicadores:
-* * Edinhos
-* * Itens desmontados
-* * Level do jogador
-* * Level de habilidades (Podendo ser configuradas cada uma delas separadamente ou através de um único multiplicador flex)
+ * Edinhos
+ * Itens desmontados
+ * Level do jogador
+ * Level de habilidades (Podendo ser configuradas cada uma delas separadamente ou através de um único multiplicador flex)
 
 ## Available languages
 * Brazilian portuguese
