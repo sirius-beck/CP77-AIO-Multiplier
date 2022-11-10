@@ -12,6 +12,12 @@ public class RespecCostSettings {
 public class DevPointsQuantitySettings {
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
     @runtimeProperty("ModSettings.category", "UI-AIO-category-DevPoints")
+    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-EnableDevPointsPerLevel")
+    @runtimeProperty("ModSettings.description", "UI-AIO-desc-EnableDevPointsPerLevel")
+    let enableDevPointsPerLevel: Bool = false;
+
+    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
+    @runtimeProperty("ModSettings.category", "UI-AIO-category-DevPoints")
     @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-AttributePointsPerLevel")
     @runtimeProperty("ModSettings.description", "UI-AIO-desc-AttributePointsPerLevel")
     @runtimeProperty("ModSettings.step", "1")
@@ -27,6 +33,30 @@ public class DevPointsQuantitySettings {
     @runtimeProperty("ModSettings.min", "1")
     @runtimeProperty("ModSettings.max", "50")
     let perkPointsPerLevel: Int32 = 1;
+
+    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
+    @runtimeProperty("ModSettings.category", "UI-AIO-category-DevPoints")
+    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-EnablePerkPointsPerSkillLevel")
+    @runtimeProperty("ModSettings.description", "UI-AIO-desc-EnablePerkPointsPerSkillLevel")
+    let enablePerkPointsPerSkillLevel: Bool = false;
+
+    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
+    @runtimeProperty("ModSettings.category", "UI-AIO-category-DevPoints")
+    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-SkillLevelUpToObtainPerkPoints")
+    @runtimeProperty("ModSettings.description", "UI-AIO-desc-SkillLevelUpToObtainPerkPoints")
+    @runtimeProperty("ModSettings.step", "1")
+    @runtimeProperty("ModSettings.min", "1")
+    @runtimeProperty("ModSettings.max", "20")
+    let skillLevelUpToObtainPerkPoints: Int32 = 1;
+
+    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
+    @runtimeProperty("ModSettings.category", "UI-AIO-category-DevPoints")
+    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-PerkPointsPerCustomSkillLevel")
+    @runtimeProperty("ModSettings.description", "UI-AIO-desc-PerkPointsPerCustomSkillLevel")
+    @runtimeProperty("ModSettings.step", "1")
+    @runtimeProperty("ModSettings.min", "1")
+    @runtimeProperty("ModSettings.max", "50")
+    let perkPointsPerCustomSkillLevel: Int32 = 1;
 }
 
 public class MoneyMultiplierSettings {

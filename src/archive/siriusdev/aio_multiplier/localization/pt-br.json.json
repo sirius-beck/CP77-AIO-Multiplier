@@ -37,13 +37,23 @@
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-EnableDevPointsPerLevel",
+                            "femaleVariant": "Habilitar Pontos de Desenvolvimento Por Level"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-EnableDevPointsPerLevel",
+                            "femaleVariant": "Habilita/Desabilita as duas próximas opções.\n(Pontos de atributo/vantagem por level)"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-AttributePointsPerLevel",
                             "femaleVariant": "Pontos de Atributo Por Level"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-AttributePointsPerLevel",
-                            "femaleVariant": "Quantidade de pontos de atributo que o jogador ganhará por level.\n(Para desativar, deixe o valor em: 1)"
+                            "femaleVariant": "Quantidade de pontos de atributo que o jogador ganhará por level."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -53,7 +63,37 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-PerkPointsPerLevel",
-                            "femaleVariant": "Quantidade de pontos de vantagem que o jogador ganhará por level.\n(Para desativar, deixe o valor em: 1)"
+                            "femaleVariant": "Quantidade de pontos de vantagem que o jogador ganhará por level."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-EnablePerkPointsPerSkillLevel",
+                            "femaleVariant": "Habilitar Pontos de Vantagem Por Level de Habilidade"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-EnablePerkPointsPerSkillLevel",
+                            "femaleVariant": "Habilita/Desabilita as duas próximas opções.\n(Nível de Habilidade Necessário & Pontos de Vantagem a Cada X Level)"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-SkillLevelUpToObtainPerkPoints",
+                            "femaleVariant": "Nível de Habilidade Necessário"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-SkillLevelUpToObtainPerkPoints",
+                            "femaleVariant": "O jogador ganhará X pontos de vantagem sempre que subir a quantidade de level definida neste campo.\n(X = Valor definido no campo abaixo)\n(O padrão do jogo é: 1 ponto de vantagem a cada 2 níveis de habilidade)"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-PerkPointsPerCustomSkillLevel",
+                            "femaleVariant": "Pontos de Vantagem a Cada X Level"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-PerkPointsPerCustomSkillLevel",
+                            "femaleVariant": "Quantidade de pontos de vantagem que o jogador ganhará a cada X level.\n(X = Valor definido no campo acima)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
