@@ -1,0 +1,23 @@
+Assalto: 3 6 9 10 12 15 18
+
+Pistolas: 3 6 9 10 12 15 18
+
+Aniquilação: 3 6 9 10 12 15 18
+
+Briguento: 3 6 9 10 12 15 18
+
+Lâminas: 3 8 9 10 14 16 17
+
+Atletismo: 3 7 8 10 11 16 19
+
+Criação: 4 6 8 10 14 17
+
+Engenharia: 2 6 8 10 14 17 18
+
+Prot. Invasão: 2 6 10 14 16 18
+
+Hack Rápido: 2 4 9 11 14 19
+
+Ninjutsu: 3 5 7 10 13 17 18
+
+Sangue Frio: 4 5 9 10 11 13 17

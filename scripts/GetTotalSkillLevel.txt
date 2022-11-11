@@ -1,0 +1,20 @@
+private final func GetTotalSkillLevel(level: Int32, proficiencyType: gamedataProficiencyType) -> Void {
+    let game: GameInstance = this.GetGameInstance();
+    let player: ref<PlayerPuppet> = GetPlayer(game);
+    let skillLevel: Int32 = 0;
+    let totalSkillLevel: Int32 = 0;
+
+    let i: Int32 = 0;
+    while i <= EnumInt(gamedataProficiencyType.Count) {
+        let currentSkill: gamedataProficiencyType = IntEnum<gamedataProficiencyType>(i);
+
+        if NotEquals(currentSkill, gamedataProficiencyType.Level) && NotEquals(currentSkill, gamedataProficiencyType.StreetCred) && NotEquals(currentSkill, gamedataProficiencyType.Count) && NotEquals(currentSkill, gamedataProficiencyType.Invalid) {
+            skillLevel = (GameInstance.GetScriptableSystemsContainer(game).Get(n"PlayerDevelopmentSystem") as PlayerDevelopmentSystem).GetProficiencyLevel(player, currentSkill);
+            totalSkillLevel += skillLevel;
+        }
+
+        i += 1;
+    }
+
+    return totalSkillLevel;
+}

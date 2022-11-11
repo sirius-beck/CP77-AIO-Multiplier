@@ -1,6 +1,23 @@
 
 module AIOMultiplier.UI
 
+public class NotificationSystemSettings {
+    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
+    @runtimeProperty("ModSettings.category", "UI-AIO-category-NotificationSystem")
+    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-EnableNotificationSystem")
+    @runtimeProperty("ModSettings.description", "UI-AIO-desc-EnableNotificationSystem")
+    let enableNotificationSystem: Bool = false;
+
+    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
+    @runtimeProperty("ModSettings.category", "UI-AIO-category-NotificationSystem")
+    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-NotificationSystemDuration")
+    @runtimeProperty("ModSettings.description", "UI-AIO-desc-NotificationSystemDuration")
+    @runtimeProperty("ModSettings.step", "0.5")
+    @runtimeProperty("ModSettings.min", "1.0")
+    @runtimeProperty("ModSettings.max", "10.0")
+    let notificationSystemDuration: Float = 5.0;
+}
+
 public class RespecCostSettings {
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
     @runtimeProperty("ModSettings.category", "UI-AIO-category-DevPoints")
@@ -36,27 +53,18 @@ public class DevPointsQuantitySettings {
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
     @runtimeProperty("ModSettings.category", "UI-AIO-category-DevPoints")
-    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-EnablePerkPointsPerSkillLevel")
-    @runtimeProperty("ModSettings.description", "UI-AIO-desc-EnablePerkPointsPerSkillLevel")
-    let enablePerkPointsPerSkillLevel: Bool = false;
+    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-EnablePerkPointsOnSkillLevelUp")
+    @runtimeProperty("ModSettings.description", "UI-AIO-desc-EnablePerkPointsOnSkillLevelUp")
+    let enablePerkPointsOnSkillLevelUp: Bool = false;
 
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
     @runtimeProperty("ModSettings.category", "UI-AIO-category-DevPoints")
-    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-SkillLevelUpToObtainPerkPoints")
-    @runtimeProperty("ModSettings.description", "UI-AIO-desc-SkillLevelUpToObtainPerkPoints")
+    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-PerkPointsOnSkillLevelUp")
+    @runtimeProperty("ModSettings.description", "UI-AIO-desc-PerkPointsOnSkillLevelUp")
     @runtimeProperty("ModSettings.step", "1")
     @runtimeProperty("ModSettings.min", "1")
     @runtimeProperty("ModSettings.max", "20")
-    let skillLevelUpToObtainPerkPoints: Int32 = 1;
-
-    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
-    @runtimeProperty("ModSettings.category", "UI-AIO-category-DevPoints")
-    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-PerkPointsPerCustomSkillLevel")
-    @runtimeProperty("ModSettings.description", "UI-AIO-desc-PerkPointsPerCustomSkillLevel")
-    @runtimeProperty("ModSettings.step", "1")
-    @runtimeProperty("ModSettings.min", "1")
-    @runtimeProperty("ModSettings.max", "50")
-    let perkPointsPerCustomSkillLevel: Int32 = 1;
+    let perkPointsOnSkillLevelUp: Int32 = 1;
 }
 
 public class MoneyMultiplierSettings {

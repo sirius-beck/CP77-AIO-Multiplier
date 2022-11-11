@@ -22,6 +22,31 @@
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-category-NotificationSystem",
+                            "femaleVariant": "Notificações"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-EnableNotificationSystem",
+                            "femaleVariant": "Habilitar"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-EnableNotificationSystem",
+                            "femaleVariant": "Habilita/desabilita as notificações de recompensas do mod."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-NotificationSystemDuration",
+                            "femaleVariant": "Duração"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-NotificationSystemDuration",
+                            "femaleVariant": "Tempo que cada notificação leverá para desaparecer da tela."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-category-DevPoints",
                             "femaleVariant": "Pontos de Desenvolvimento"
                         },
@@ -43,7 +68,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-EnableDevPointsPerLevel",
-                            "femaleVariant": "Habilita/Desabilita as duas próximas opções.\n(Pontos de atributo/vantagem por level)"
+                            "femaleVariant": "Habilita/Desabilita as duas próximas opções.\n(Pontos de Atributo Por Level & Pontos de Vantagem Por Level)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -67,33 +92,23 @@
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-displayName-EnablePerkPointsPerSkillLevel",
-                            "femaleVariant": "Habilitar Pontos de Vantagem Por Level de Habilidade"
+                            "secondaryKey": "UI-AIO-displayName-EnablePerkPointsOnSkillLevelUp",
+                            "femaleVariant": "Habilitar Pontos de Vantagem Extras"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-desc-EnablePerkPointsPerSkillLevel",
-                            "femaleVariant": "Habilita/Desabilita as duas próximas opções.\n(Nível de Habilidade Necessário & Pontos de Vantagem a Cada X Level)"
+                            "secondaryKey": "UI-AIO-desc-EnablePerkPointsOnSkillLevelUp",
+                            "femaleVariant": "Habilita/Desabilita os pontos extras de vantagem."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-displayName-SkillLevelUpToObtainPerkPoints",
-                            "femaleVariant": "Nível de Habilidade Necessário"
+                            "secondaryKey": "UI-AIO-displayName-PerkPointsOnSkillLevelUp",
+                            "femaleVariant": "Pontos de Vantagem Extras"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-desc-SkillLevelUpToObtainPerkPoints",
-                            "femaleVariant": "O jogador ganhará X pontos de vantagem sempre que subir a quantidade de level definida neste campo.\n(X = Valor definido no campo abaixo)\n(O padrão do jogo é: 1 ponto de vantagem a cada 2 níveis de habilidade)"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-displayName-PerkPointsPerCustomSkillLevel",
-                            "femaleVariant": "Pontos de Vantagem a Cada X Level"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-AIO-desc-PerkPointsPerCustomSkillLevel",
-                            "femaleVariant": "Quantidade de pontos de vantagem que o jogador ganhará a cada X level.\n(X = Valor definido no campo acima)"
+                            "secondaryKey": "UI-AIO-desc-PerkPointsOnSkillLevelUp",
+                            "femaleVariant": "Em determinados níveis de skill, o jogo te dá +1 ponto de vantagem, este campo altera este valor."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -193,7 +208,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-multBrawling",
-                            "femaleVariant": "Briga"
+                            "femaleVariant": "Briguento"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -273,7 +288,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-multKenjutsu",
-                            "femaleVariant": "Ninjutsu"
+                            "femaleVariant": "Lâminas"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -283,7 +298,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-multStealth",
-                            "femaleVariant": "Furtividade"
+                            "femaleVariant": "Ninjutsu"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",

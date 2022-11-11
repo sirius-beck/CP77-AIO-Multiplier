@@ -35,7 +35,10 @@ class ModManager():
         print('|- 3. Pack mod')
         print('|- 4. Pack mod and exit')
         print('|- 5. Check redscript files')
-        print('|- 6. Exit')
+        print('|- 6. Open project folder')
+        print('|- 7. Open source folder')
+        print('|- 8. Open build folder')
+        print('|- 9. Exit')
         option = int(input('|\n|- Enter the desired option number: '))
 
         if option == 1:
@@ -55,6 +58,18 @@ class ModManager():
         elif option == 5:
             self.run()
             self.lintRedsFiles()
+        elif option == 6:
+            system('explorer %CD%')
+            self.menu()
+        elif option == 7:
+            system('explorer %CD%\\src')
+            self.menu()
+        elif option == 8:
+            if path.exists('./build'):
+                system('explorer %CD%\\build')
+            else:
+                print('\n\nDirectory does not exist, package your project first!')
+            self.menu()
         else:
             exit()
     
@@ -187,9 +202,14 @@ class ModManager():
             with open(f'scripts\\log\\{logFile}', 'r') as file:
                 log = file.read()
             if 'ERROR' in log:
-                print("\n\n>> There are errors in one of your .reds files, correct them and try again later! Press a key to exit...")
-                system('pause >nul')
-                exit()
+                if mode == 0:
+                    print('\n\n>> There are errors in one of your .reds files, correct them and try again later! Press a key to return to the main menu...')
+                    system('pause >nul')
+                    self.menu()
+                else:
+                    print('\n\n>> There are errors in one of your .reds files, correct them and try again later! Press a key to exit...')
+                    system('pause >nul')
+                    exit()
             else:
                 system(f'xcopy /Y /D /S /I src\\redscript "build\\r6\\scripts\\{self.name}"')
                 system('rmdir /Q /S scripts\\log')

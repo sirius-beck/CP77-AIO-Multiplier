@@ -22,6 +22,31 @@
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-category-NotificationSystem",
+                            "femaleVariant": "Notifications"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-EnableNotificationSystem",
+                            "femaleVariant": "Enable"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-EnableNotificationSystem",
+                            "femaleVariant": "Enables/disables mod reward notifications."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-NotificationSystemDuration",
+                            "femaleVariant": "Duration"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-NotificationSystemDuration",
+                            "femaleVariant": "Time it will take for each notification to disappear from the screen."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-category-DevPoints",
                             "femaleVariant": "Development Points"
                         },
@@ -34,6 +59,16 @@
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-NoRespecCost",
                             "femaleVariant": "There will be no cost to reset development points."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-EnableDevPointsPerLevel",
+                            "femaleVariant": "Habilitar Pontos de Desenvolvimento Por Level"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-EnableDevPointsPerLevel",
+                            "femaleVariant": "Enable/Disable the next two options.\n(Attribute Points Per Level & Perk Points Per Level)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -54,6 +89,26 @@
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-PerkPointsPerLevel",
                             "femaleVariant": "Amount of perk points the player will gain per level.\n(To disable, leave the value at: 1)"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-EnablePerkPointsOnSkillLevelUp",
+                            "femaleVariant": "Enable Extra Perk Points"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-EnablePerkPointsOnSkillLevelUp",
+                            "femaleVariant": "Enables/Disables the extra perk points."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-displayName-PerkPointsOnSkillLevelUp",
+                            "femaleVariant": "Extra Perk Points"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "UI-AIO-desc-PerkPointsOnSkillLevelUp",
+                            "femaleVariant": "At certain skill levels, the game gives you +1 perk point, this field changes this value."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
