@@ -218,7 +218,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-multColdBlood",
-                            "femaleVariant": "Sangue frio"
+                            "femaleVariant": "Sangue-Frio"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -228,7 +228,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-multCombatHacking",
-                            "femaleVariant": "Hack de Combate"
+                            "femaleVariant": "Hack Rápido"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -248,7 +248,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-multDemolition",
-                            "femaleVariant": "Demolição"
+                            "femaleVariant": "Aniquilação"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -268,7 +268,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-multGunslinger",
-                            "femaleVariant": "Atirador"
+                            "femaleVariant": "Pistolas"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -278,7 +278,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-multHacking",
-                            "femaleVariant": "Hackear"
+                            "femaleVariant": "Protocolo de Invasão"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
