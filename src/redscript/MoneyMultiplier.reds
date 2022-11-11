@@ -1,6 +1,6 @@
 module AIOMultiplier.Eddies
 import AIOMultiplier.UI.MoneyMultiplierSettings
-import AIOMultiplier.Notifications.*
+// import AIOMultiplier.Notifications.*
 
 @addField(PlayerPuppet)
 private let aioMoneyMultiplier: ref<AIOMoneyMultiplier>;
@@ -45,9 +45,9 @@ public class AIOMoneyMultiplier {
         return !this.continueAdd && true;
     }
 
-    private func ShowNotification(msg: String) -> Void {
-        let aioNotificationSystem = new AIONotificationSystem();
+    // private func ShowNotification(msg: String) -> Void {
+    //     let aioNotificationSystem = new AIONotificationSystem();
 
-        aioNotificationSystem.ShowNotification(msg);
-    }
+    //     aioNotificationSystem.ShowNotification(msg);
+    // }
 }

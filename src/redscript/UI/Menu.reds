@@ -1,4 +1,3 @@
-
 module AIOMultiplier.UI
 
 public class NotificationSystemSettings {
