@@ -1,7 +1,7 @@
 module AIOMultiplier.Notifications
 import AIOMultiplier.UI.NotificationSystemSettings
 
-private class AIONotificationSystem extends ScriptableSystem {
+public class AIONotificationSystem extends ScriptableSystem {
     private let game: GameInstance;
     private let player: wref<PlayerPuppet>;
     private let blackboard: ref<IBlackboard>;
@@ -15,11 +15,13 @@ private class AIONotificationSystem extends ScriptableSystem {
     }
     
     private func ShowNotification(msg: String) -> Void {
-        let screenMessage: SimpleScreenMessage;
-        screenMessage.isShown = true;
-        screenMessage.duration = 5.0;
-        screenMessage.message = msg;
-        this.blackboard.SetVariant(GetAllBlackboardDefs().UI_Notifications.WarningMessage, ToVariant(screenMessage), true);
+        if this.IsEnabled() {
+            let screenMessage: SimpleScreenMessage;
+            screenMessage.isShown = true;
+            screenMessage.duration = this.GetDuration();
+            screenMessage.message = msg;
+            this.blackboard.SetVariant(GetAllBlackboardDefs().UI_Notifications.WarningMessage, ToVariant(screenMessage), true);
+        }
     }
 
     private func IsEnabled() -> Bool {

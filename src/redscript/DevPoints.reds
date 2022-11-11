@@ -1,5 +1,5 @@
 import AIOMultiplier.UI.DevPointsQuantitySettings
-// import AIOMultiplier.UI.NotificationSystemSettings
+// import AIOMultiplier.Notifications.*
 
 @addField(PlayerDevelopmentData)
 private let aioDevPoints: ref<AIODevPoints>;
@@ -12,17 +12,38 @@ private final const func ModifyDevPoints(type: gamedataProficiencyType, level: I
         this.aioDevPoints = new AIODevPoints();
     }
 
+    let attributePointsEarned: Int32 = 0;
+    let perkPointsEarned: Int32 = 0;
+
     let i: Int32 = 0;
     while i <= EnumInt(gamedataDevelopmentPointType.Count) {
-        val = this.GetDevPointsForLevel(level, type, IntEnum<gamedataDevelopmentPointType>(i));
+        let pointType: gamedataDevelopmentPointType = IntEnum<gamedataDevelopmentPointType>(i);
 
-        val = this.aioDevPoints.SetNewValue(val, IntEnum<gamedataDevelopmentPointType>(i), type, level);
+        val = this.GetDevPointsForLevel(level, type, pointType);
+
+        val = this.aioDevPoints.SetNewValue(val, pointType, type, level);
         
         if val > 0 {
-            this.AddDevelopmentPoints(val, IntEnum<gamedataDevelopmentPointType>(i));
+            this.AddDevelopmentPoints(val, pointType);
+
+            if Equals(pointType, gamedataDevelopmentPointType.Attribute) {
+                attributePointsEarned += val;
+            } else {
+                perkPointsEarned += val;
+            }
         };
         i += 1;
     };
+
+    // if attributePointsEarned > 0 && perkPointsEarned > 0 {
+    //     this.aioDevPoints.ShowNotification("+"+attributePointsEarned+" attribute points added!\n+"+perkPointsEarned+" perk points added");
+    // }
+    // if attributePointsEarned > 0 && perkPointsEarned <= 0 {
+    //     this.aioDevPoints.ShowNotification("+"+attributePointsEarned+" attribute points added!");
+    // }
+    // if attributePointsEarned <= 0 && perkPointsEarned > 0 {
+    //     this.aioDevPoints.ShowNotification("+"+perkPointsEarned+" perk points added");
+    // }
 }
 
 public class AIODevPoints {
@@ -215,4 +236,10 @@ public class AIODevPoints {
             return oldValue;
         }
     }
+
+    // private func ShowNotification(msg: String) -> Void {
+    //     let aioNotificationSystem = new AIONotificationSystem();
+
+    //     aioNotificationSystem.ShowNotification(msg);
+    // }
 }

@@ -1,4 +1,5 @@
 import AIOMultiplier.UI.RespecCostSettings
+import AIOMultiplier.Notifications.*
 
 @replaceMethod(PlayerDevelopmentData)
 public final const func GetTotalRespecCost() -> Int32 {
@@ -20,5 +21,11 @@ public class AIORespecCost {
         }
 
         return cost;
+    }
+
+    private func ShowNotification(msg: String) -> Void {
+        let aioNotificationSystem = new AIONotificationSystem();
+
+        aioNotificationSystem.ShowNotification(msg);
     }
 }
