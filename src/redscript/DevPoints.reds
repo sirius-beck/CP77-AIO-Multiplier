@@ -1,4 +1,5 @@
 import AIOMultiplier.UI.DevPointsQuantitySettings
+// import AIOMultiplier.UI.NotificationSystemSettings
 
 @addField(PlayerDevelopmentData)
 private let aioDevPoints: ref<AIODevPoints>;
@@ -27,12 +28,16 @@ private final const func ModifyDevPoints(type: gamedataProficiencyType, level: I
 public class AIODevPoints {
     private func SetNewValue(oldValue: Int32, pointType: gamedataDevelopmentPointType, proficiencyType: gamedataProficiencyType, level: Int32) -> Int32 {
         if this.IsSkillLevelUp(proficiencyType) {
-            return this.GetPointsValue(oldValue, 3, proficiencyType, level);
+            return this.GetPerkPointsOnSkillLevelUp(oldValue, proficiencyType, level);
         } else {
-            if Equals(pointType, gamedataDevelopmentPointType.Attribute) {
-                return this.GetPointsValue(oldValue, 1, proficiencyType, level);
+            if NotEquals(proficiencyType, gamedataProficiencyType.StreetCred) {
+                if Equals(pointType, gamedataDevelopmentPointType.Attribute) {
+                    return this.GetPointsValue(oldValue, 0);
+                } else {
+                    return this.GetPointsValue(oldValue, 1);
+                }
             } else {
-                return this.GetPointsValue(oldValue, 2, proficiencyType, level);
+                return oldValue;
             }
         }
     }
@@ -45,14 +50,13 @@ public class AIODevPoints {
         }
     }
 
-    private func GetPointsValue(oldValue: Int32, type: Int32, proficiencyType: gamedataProficiencyType, level: Int32) -> Int32 {
+    private func GetPointsValue(oldValue: Int32, type: Int32) -> Int32 {
         let devPointsQuantitySettings = new DevPointsQuantitySettings();
         
         if devPointsQuantitySettings.enableDevPointsPerLevel {
             switch type{
-                case 1: return devPointsQuantitySettings.attributePointsPerLevel;
-                case 2: return devPointsQuantitySettings.perkPointsPerLevel;
-                case 3: return this.GetPerkPointsOnSkillLevelUp(devPointsQuantitySettings, oldValue, proficiencyType, level);
+                case 0: return devPointsQuantitySettings.attributePointsPerLevel;
+                case 1: return devPointsQuantitySettings.perkPointsPerLevel;
                 default: return oldValue;
             }
         } else {
@@ -60,8 +64,8 @@ public class AIODevPoints {
         }
     }
 
-    private func GetPerkPointsOnSkillLevelUp(devPointsQuantitySettings: ref<DevPointsQuantitySettings>, oldValue: Int32, proficiencyType: gamedataProficiencyType, level: Int32) -> Int32 {
-        // let devPointsQuantitySettings = new DevPointsQuantitySettings();
+    private func GetPerkPointsOnSkillLevelUp(oldValue: Int32, proficiencyType: gamedataProficiencyType, level: Int32) -> Int32 {
+        let devPointsQuantitySettings = new DevPointsQuantitySettings();
         let newValue: Int32 = devPointsQuantitySettings.perkPointsOnSkillLevelUp;
 
         if devPointsQuantitySettings.enablePerkPointsOnSkillLevelUp {
