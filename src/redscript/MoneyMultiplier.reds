@@ -1,4 +1,3 @@
-module AIOMultiplier.Eddies
 import AIOMultiplier.UI.MoneyMultiplierSettings
 
 @addField(PlayerPuppet)
