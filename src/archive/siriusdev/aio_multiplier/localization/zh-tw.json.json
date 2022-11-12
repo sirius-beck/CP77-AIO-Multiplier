@@ -1,0 +1,458 @@
+{
+  "Header": {
+    "WolvenKitVersion": "8.7.0",
+    "WKitJsonVersion": "0.0.3",
+    "GameVersion": 1600,
+    "ExportedDateTime": "2022-11-12T05:01:21.0030643Z",
+    "DataType": "CR2W",
+    "ArchiveFileName": "H:\\Download\\100\\0097\\source\\archive\\AIOMultiplier\\siriusdev\\aio_multiplier\\localization\\en-us.json"
+  },
+  "Data": {
+    "Version": 195,
+    "BuildVersion": 0,
+    "RootChunk": {
+      "$type": "JsonResource",
+      "cookingPlatform": "PLATFORM_PC",
+      "root": {
+        "HandleId": "0",
+        "Data": {
+          "$type": "localizationPersistenceOnScreenEntries",
+          "entries": [
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "AIO倍數",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-mod-name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "通知",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-category-NotificationSystem"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "開啟",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-EnableNotificationSystem"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "「開啟/關閉」模組的獎勵通知。",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-EnableNotificationSystem"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "持續時間",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-NotificationSystemDuration"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "每個通知從螢幕上消失所需的時間。",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-NotificationSystemDuration"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "成長點數",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-category-DevPoints"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "不涉及花費",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-NoRespecCost"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "重置成長點數將不會有任何花費。",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-NoRespecCost"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "開啟每個等級的成長點數。",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-EnableDevPointsPerLevel"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "「開啟/關閉」下面兩種選項。\n（每個等級的特質點數以及每個等級的專精點數）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-EnableDevPointsPerLevel"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "每個等級的特質點數",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-AttributePointsPerLevel"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "玩家每個等級將可獲得的特質點數。",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-AttributePointsPerLevel"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "每個等級的專精點數",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-PerkPointsPerLevel"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "玩家每個等級將可獲得的專精點數。",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-PerkPointsPerLevel"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "開啟額外的專精點數",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-EnablePerkPointsOnSkillLevelUp"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "「開啟/關閉」額外的專精點數。",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-EnablePerkPointsOnSkillLevelUp"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "額外的專精點數",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-PerkPointsOnSkillLevelUp"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "在技能等級，遊戲會給予你+1的專精點數，以變更該數值為範疇。",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-PerkPointsOnSkillLevelUp"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "物品倍數",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-category-itemsMult"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "歐元",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-moneyMult"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的歐元將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-moneyMult"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "拆解物品",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-disassembledMult"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "拆解物品所獲得的將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-disassembledMult"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "經驗值倍數 - 玩家",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-category-playerExperience"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "等級",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multLevel"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multLevel"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "街頭聲譽",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multStreetCred"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的街頭聲譽將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multStreetCred"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "經驗值倍數 - 技能",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-category-skillsExperience"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "使用彈性 XP",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-useFlexXP"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "所有玩家所獲得技能經驗值，將共享相同的倍數。",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-useFlexXP"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "彈性倍數",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multFlex"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multFlex"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "突擊",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multAssault"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multAssault"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "運動好手",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multAthletics"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multAthletics"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "幹架",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multBrawling"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multBrawling"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "冷血",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multColdBlood"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multColdBlood"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "速駭",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multCombatHacking"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multCombatHacking"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "製作",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multCrafting"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multCrafting"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "灰飛煙滅",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multDemolition"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multDemolition"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "工程",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multEngineering"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multEngineering"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "手槍",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multGunslinger"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multGunslinger"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "破解協定",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multHacking"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multHacking"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "刀劍",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multKenjutsu"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multKenjutsu"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "忍術",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-displayName-multStealth"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
+              "maleVariant": null,
+              "primaryKey": 0,
+              "secondaryKey": "UI-AIO-desc-multStealth"
+            },
+            {
+                "$type": "localizationPersistenceOnScreenEntry",
+                "secondaryKey": "UI-notification-msg-DevPoints-01",
+                "femaleVariant": "Level Up: "
+            },
+            {
+                "$type": "localizationPersistenceOnScreenEntry",
+                "secondaryKey": "UI-notification-msg-DevPoints-02",
+                "femaleVariant": "\nLevel "
+            },
+            {
+                "$type": "localizationPersistenceOnScreenEntry",
+                "secondaryKey": "UI-notification-msg-DevPoints-03",
+                "femaleVariant": " -> "
+            },
+            {
+                "$type": "localizationPersistenceOnScreenEntry",
+                "secondaryKey": "UI-notification-msg-DevPoints-04",
+                "femaleVariant": "\n+"
+            },
+            {
+                "$type": "localizationPersistenceOnScreenEntry",
+                "secondaryKey": "UI-notification-msg-DevPoints-05",
+                "femaleVariant": " perk points added!"
+            }
+          ]
+        }
+      }
+    },
+    "EmbeddedFiles": []
+  }
+}

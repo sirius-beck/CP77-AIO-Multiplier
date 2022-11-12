@@ -1,21 +1,21 @@
 module AIOMultiplier.UI
 
-public class NotificationSystemSettings {
-    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
-    @runtimeProperty("ModSettings.category", "UI-AIO-category-NotificationSystem")
-    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-EnableNotificationSystem")
-    @runtimeProperty("ModSettings.description", "UI-AIO-desc-EnableNotificationSystem")
-    let enableNotificationSystem: Bool = false;
+// public class NotificationSystemSettings {
+//     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
+//     @runtimeProperty("ModSettings.category", "UI-AIO-category-NotificationSystem")
+//     @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-EnableNotificationSystem")
+//     @runtimeProperty("ModSettings.description", "UI-AIO-desc-EnableNotificationSystem")
+//     let enableNotificationSystem: Bool = false;
 
-    @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
-    @runtimeProperty("ModSettings.category", "UI-AIO-category-NotificationSystem")
-    @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-NotificationSystemDuration")
-    @runtimeProperty("ModSettings.description", "UI-AIO-desc-NotificationSystemDuration")
-    @runtimeProperty("ModSettings.step", "0.5")
-    @runtimeProperty("ModSettings.min", "1.0")
-    @runtimeProperty("ModSettings.max", "10.0")
-    let notificationSystemDuration: Float = 5.0;
-}
+//     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
+//     @runtimeProperty("ModSettings.category", "UI-AIO-category-NotificationSystem")
+//     @runtimeProperty("ModSettings.displayName", "UI-AIO-displayName-NotificationSystemDuration")
+//     @runtimeProperty("ModSettings.description", "UI-AIO-desc-NotificationSystemDuration")
+//     @runtimeProperty("ModSettings.step", "0.5")
+//     @runtimeProperty("ModSettings.min", "1.0")
+//     @runtimeProperty("ModSettings.max", "10.0")
+//     let notificationSystemDuration: Float = 5.0;
+// }
 
 public class RespecCostSettings {
     @runtimeProperty("ModSettings.mod", "UI-AIO-mod-name")
