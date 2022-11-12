@@ -1,6 +1,5 @@
 import AIOMultiplier.UI.PlayerExperienceModSettings
 import AIOMultiplier.UI.SkillsExperienceModSettings
-// import AIOMultiplier.Notifications.*
 
 @replaceMethod(PlayerDevelopmentData)
 public final const func AddExperience(amount: Int32, type: gamedataProficiencyType, telemetryGainReason: telemetryLevelGainReason) -> Void {
@@ -113,10 +112,4 @@ public class AIOXPMultiplier {
 
         return xpValue;
     }
-
-    // private func ShowNotification(msg: String) -> Void {
-    //     let aioNotificationSystem = new AIONotificationSystem();
-
-    //     aioNotificationSystem.ShowNotification(msg);
-    // }
 }

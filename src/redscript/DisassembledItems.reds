@@ -1,5 +1,4 @@
 import AIOMultiplier.UI.DisassembledItemsMultiplierSettings
-// import AIOMultiplier.Notifications.*
 
 @replaceMethod(CraftingSystem)
 public final const func GetDisassemblyResultItems(target: wref<GameObject>, itemID: ItemID, amount: Int32, out restoredAttachments: array<ItemAttachments>, opt calledFromUI: Bool) -> array<IngredientData> {
@@ -73,10 +72,4 @@ public class AIODisassembledItems {
 
         return newValue;
     }
-
-    // private func ShowNotification(msg: String) -> Void {
-    //     let aioNotificationSystem = new AIONotificationSystem();
-
-    //     aioNotificationSystem.ShowNotification(msg);
-    // }
 }
