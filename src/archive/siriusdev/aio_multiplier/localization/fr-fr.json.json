@@ -304,31 +304,6 @@
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multStealth",
                             "femaleVariant": "L'expérience gagné sera multiplié par cette valeur.\n(Pour le désactivé, laissez cette valeur a: 1)"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-notification-msg-DevPoints-01",
-                            "femaleVariant": "Level Up: "
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-notification-msg-DevPoints-02",
-                            "femaleVariant": "\nLevel "
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-notification-msg-DevPoints-03",
-                            "femaleVariant": " -> "
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-notification-msg-DevPoints-04",
-                            "femaleVariant": "\n+"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-notification-msg-DevPoints-05",
-                            "femaleVariant": " perk points added!"
                         }
                     ]
                 }

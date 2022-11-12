@@ -304,31 +304,6 @@
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-multStealth",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-notification-msg-DevPoints-01",
-                            "femaleVariant": "Subiu de Nível: "
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-notification-msg-DevPoints-02",
-                            "femaleVariant": "\nNível "
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-notification-msg-DevPoints-03",
-                            "femaleVariant": " -> "
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-notification-msg-DevPoints-04",
-                            "femaleVariant": "\n+"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "UI-notification-msg-DevPoints-05",
-                            "femaleVariant": " pontos de vantagem adicionados!"
                         }
                     ]
                 }
