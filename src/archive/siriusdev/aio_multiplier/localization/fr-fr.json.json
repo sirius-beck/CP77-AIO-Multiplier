@@ -98,12 +98,12 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-desc-EnablePerkPointsOnSkillLevelUp",
-                            "femaleVariant": "Active/désactive les points supplémentaire."
+                            "femaleVariant": "Active/désactive les points supplémentaires."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-PerkPointsOnSkillLevelUp",
-                            "femaleVariant": "Points supplémentaire"
+                            "femaleVariant": "Points supplémentaires"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
@@ -128,7 +128,7 @@
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "UI-AIO-displayName-disassembledMult",
-                            "femaleVariant": "Déssemblage d'items"
+                            "femaleVariant": "Désassemblage d'items"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
