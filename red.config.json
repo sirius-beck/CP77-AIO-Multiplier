@@ -1,0 +1,20 @@
+{
+    "name": "AIOMultiplier",
+    "version": "5.0.0",
+    "game": "G:\\Cyberpunk 2077",
+    "stage": "out",
+    "scripts": {
+        "redscript": {
+            "src": "src/redscript",
+            "output": "r6/scripts/"
+        }
+    },
+    "archives": {
+        "raw": "src/archives/archive",
+        "archivexl": "src/archives/archive.xl"
+    },
+    "tools": {
+        "wolvenkitCLI": "wkit",
+        "redCLI": "red"
+    }
+}

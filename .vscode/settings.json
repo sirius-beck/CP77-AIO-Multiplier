@@ -1,3 +1,14 @@
 {
-    "commentTranslate.targetLanguage": "en"
+    "commentTranslate.targetLanguage": "en",
+    "cSpell.enabled": false,
+    "json.schemas": [
+        {
+            "fileMatch": ["red.config.json"],
+            "url": "./deps/red.config.schema.json"
+        }
+    ],
+    "files.associations": {
+        "*.xl": "yaml"
+    },
+    "makefile.configureOnOpen": true
 }

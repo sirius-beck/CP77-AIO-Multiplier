@@ -1,0 +1,141 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "RED CLI Configuration",
+    "description": "Configuration schema for the Red CLI tool",
+    "type": "object",
+    "required": ["name"],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of your mod. Used as folder name in installation paths",
+            "minLength": 1
+        },
+        "version": {
+            "type": "string",
+            "description": "Version of your mod using semver format",
+            "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$",
+            "default": "0.1.0"
+        },
+        "license": {
+            "type": "boolean",
+            "description": "Whether to include LICENSE file when packing a release",
+            "default": false
+        },
+        "game": {
+            "type": "string",
+            "description": "Absolute path to Cyberpunk 2077 directory. Leave empty for auto-detection"
+        },
+        "stage": {
+            "type": "string",
+            "description": "Relative path for temporary script bundling output",
+            "default": "stage\\"
+        },
+        "watchTime": {
+            "type": "number",
+            "description": "Total time recorded when using watch command (in milliseconds)",
+            "minimum": 0,
+            "default": 0
+        },
+        "scripts": {
+            "type": "object",
+            "description": "Script configuration for different mod types",
+            "minProperties": 1,
+            "properties": {
+                "redscript": {
+                    "type": "object",
+                    "description": "Redscript-specific configuration",
+                    "required": ["src"],
+                    "properties": {
+                        "debounceTime": {
+                            "type": "number",
+                            "description": "Debounce time between type checks for hot reload (milliseconds)",
+                            "minimum": 1000,
+                            "default": 3000
+                        },
+                        "src": {
+                            "type": "string",
+                            "description": "Relative path to .reds script files"
+                        },
+                        "output": {
+                            "type": "string",
+                            "description": "Relative path for redscript installation in game directory",
+                            "default": "r6\\scripts\\"
+                        }
+                    }
+                },
+                "cet": {
+                    "type": "object",
+                    "description": "Cyber Engine Tweaks configuration",
+                    "required": ["src"],
+                    "properties": {
+                        "src": {
+                            "type": "string",
+                            "description": "Relative path to .lua script files"
+                        },
+                        "output": {
+                            "type": "string",
+                            "description": "Relative path for CET mod installation in game directory",
+                            "default": "bin\\x64\\plugins\\cyber_engine_tweaks\\mods\\"
+                        }
+                    }
+                }
+            },
+            "oneOf": [{ "required": ["redscript"] }, { "required": ["cet"] }]
+        },
+        "plugin": {
+            "type": "object",
+            "description": "RED4ext plugin configuration",
+            "required": ["debug", "release"],
+            "properties": {
+                "debug": {
+                    "type": "string",
+                    "description": "Relative path to Debug build output of RED4ext plugin"
+                },
+                "release": {
+                    "type": "string",
+                    "description": "Relative path to Release build output of RED4ext plugin"
+                }
+            }
+        },
+        "archives": {
+            "type": "object",
+            "description": "Archive configuration for different mod types",
+            "required": ["raw", "archivexl"],
+            "properties": {
+                "raw": {
+                    "type": "string",
+                    "description": "Path to raw archives folder, relative to project root",
+                    "default": "src\\archives\\raw"
+                },
+                "archivexl": {
+                    "type": "string",
+                    "description": "Path to archive.xl file, relative to project root",
+                    "default": "src\\archives\\archive.xl"
+                }
+            }
+        },
+        "tools": {
+            "type": "object",
+            "description": "Configuration for different ci tools",
+            "minProperties": 1,
+            "properties": {
+                "wolvenkitCLI": {
+                    "type": "string",
+                    "description": "Path to wolvenkit-cli executable (can be relative to project root, absolute, environment variable or the name of an executable in PATH)",
+                    "default": "WolvenKit.CLI"
+                },
+                "redCLI": {
+                    "type": "string",
+                    "description": "Path to red-cli executable (can be relative to project root, absolute, environment variable or the name of an executable in PATH)",
+                    "default": "red-cli"
+                }
+            }
+        }
+    },
+    "additionalProperties": false,
+    "dependencies": {
+        "plugin": {
+            "required": ["name"]
+        }
+    }
+}
