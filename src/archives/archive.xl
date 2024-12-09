@@ -1,0 +1,6 @@
+localization:
+    onscreens:
+        en-us: siriusbeck\AIOMultiplier\localization\en-us\onscreens.json
+        pt-br: siriusbeck\AIOMultiplier\localization\pt-br\onscreens.json
+        zh-tw: siriusbeck\AIOMultiplier\localization\zh-tw\onscreens.json
+        fr-fr: siriusbeck\AIOMultiplier\localization\fr-fr\onscreens.json
