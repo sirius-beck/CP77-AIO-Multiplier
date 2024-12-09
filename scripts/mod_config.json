@@ -1,8 +1,0 @@
-{
-    "name": "AIO Multiplier",
-    "version": "1.0.0",
-    "isRedmod": false,
-    "externals": {
-        "bundleFile": "deps\\final.redscripts"
-    }
-}
