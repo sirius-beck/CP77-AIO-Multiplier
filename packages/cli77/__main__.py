@@ -24,7 +24,7 @@ def main():
             case "bundle":
                 pack_mod_enabled = False
                 break
-            case "--pack-only" | r"-p":
+            case "--pack-only" | "-p":
                 if "pack" not in args:
                     raise Exception(
                         '--pack-only flag is only available with the "pack" command'
@@ -35,19 +35,18 @@ def main():
                 break
         args.pop(0)
 
-    if pack_mod_enabled and pack_only_enabled:
+    if pack_only_enabled:
         try:
             pack_mod()
         except Exception as e:
             raise e
-        exit()
-
-    setup_config()
-    init()
-    archives_bundle()
-    archives_pack()
-    scripts_bundle()
-    pack_mod()
+    else:
+        setup_config()
+        init()
+        archives_bundle()
+        archives_pack()
+        scripts_bundle()
+        pack_mod()
 
 
 if __name__ == "__main__":
