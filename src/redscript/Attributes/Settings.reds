@@ -1,9 +1,9 @@
 module AIOMultiplier.Attributes
 
 class AIOAttributesSettings {
-    @runtimeProperty("ModSettings.mod", "AIO-SETTINGS-mod-name")
-    @runtimeProperty("ModSettings.category", "AIO-SETTINGS-category-Attributes")
-    @runtimeProperty("ModSettings.displayName", "AIO-SETTINGS-displayName-ResetAttributesAlwaysEnabled")
-    @runtimeProperty("ModSettings.description", "AIO-SETTINGS-desc-ResetAttributesAlwaysEnabled")
+    @runtimeProperty("ModSettings.mod", "AIO-ModSettings-ModName")
+    @runtimeProperty("ModSettings.category", "AIO-ModSettings-Category-Attributes")
+    @runtimeProperty("ModSettings.displayName", "AIO-ModSettings-DisplayName-ResetAttributesAlwaysEnabled")
+    @runtimeProperty("ModSettings.description", "AIO-ModSettings-Description-ResetAttributesAlwaysEnabled")
     let resetAttributesAlwaysEnabled: Bool = true;
 }
