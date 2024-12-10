@@ -1,16 +1,23 @@
 module AIOMultiplier.DevPoints
 
 public class AIODevPoints {
-    private func SetNewRespecCost(cost: Int32) -> Int32 {
-        let settings = new AIODevPointsSettings();
+    private let settings: ref<AIODevPointsSettings>;
 
-        if settings.noRespecCost {
-            cost = 0;
+    private func GetSettings() -> ref<AIODevPointsSettings> {
+        if !IsDefined(this.settings) {
+            this.settings = new AIODevPointsSettings();
         }
 
-        return cost;
+        return this.settings;
     }
 
+    // private func SetNewRespecCost(cost: Int32) -> Int32 {
+    //     let settings = this.GetSettings();
+    //     if settings.noRespecCost {
+    //         cost = 0;
+    //     }
+    //     return cost;
+    // }
     private func SetNewValue(
         oldValue: Int32,
         proficiencyType: gamedataProficiencyType,
@@ -41,7 +48,7 @@ public class AIODevPoints {
     }
 
     private func GetPointsValue(oldValue: Int32, type: Int32) -> Int32 {
-        let settings = new AIODevPointsSettings();
+        let settings = this.GetSettings();
 
         if settings.enableDevPointsPerLevel {
             switch type {
@@ -58,7 +65,7 @@ public class AIODevPoints {
     }
 
     private func GetPerkPointsOnSkillLevelUp(oldValue: Int32, proficiencyType: gamedataProficiencyType, level: Int32) -> Int32 {
-        let settings = new AIODevPointsSettings();
+        let settings = this.GetSettings();
         let newValue: Int32 = settings.perkPointsOnSkillLevelUp;
 
         if settings.enablePerkPointsOnSkillLevelUp {
