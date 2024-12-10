@@ -3,7 +3,7 @@ import os
 import re
 import subprocess as sp
 import shutil
-from typing import Optional
+from typing import Literal, Optional
 import zipfile
 
 from .red_config import RedConfig
@@ -24,7 +24,7 @@ def setup_config(config_path: Optional[str] = None):
     if config_path is None:
         config_path = Utils.normjoin(os.getcwd(), "red.config.json")
     else:
-        config_path = Utils.normpath(config_path)
+        config_path = os.path.normpath(config_path)
 
     config: Optional[RedConfig]
     try:
@@ -52,16 +52,18 @@ def setup_config(config_path: Optional[str] = None):
     SOURCE = {
         "raw": RAW,
         "archivexl": ARCHIVEXL,
+        "redscript": os.path.normpath(config["scripts"]["redscript"]["src"])
     }
     TARGET = {
         "raw": Utils.normjoin(STAGE, baseArchivePath, MOD_NAME),
         "archivexl": Utils.normjoin(STAGE, baseArchivePath, f"{MOD_NAME}.archive.xl"),
+        "redscript": Utils.normjoin(STAGE, config["scripts"]["redscript"]["output"]),
     }
 
     return
 
 
-def init():
+def init(clean: bool = True):
     if not os.path.exists(RAW):
         print(
             'Error: The archive file was not found, check your "red.config.json" file.'
@@ -82,7 +84,7 @@ def init():
     if rproc.returncode != 0:
         raise FileNotFoundError(f"Red CLI not found at: {RED_CLI}")
 
-    if os.path.exists(STAGE):
+    if os.path.exists(STAGE) and clean:
         try:
             shutil.rmtree(STAGE)
 
@@ -143,7 +145,7 @@ def archives_bundle():
     return
 
 
-def archives_pack():
+def archives_convert():
     print("Archives packing started!", flush=True)
 
     modPath = TARGET["raw"]
@@ -183,8 +185,23 @@ def archives_pack():
     return
 
 
-def scripts_bundle():
+def scripts_bundle(scripts_bundle_method: Literal["copy", "bundle"] = "copy"):
     print("Scripts bundling started", end=" ", flush=True)
+
+    if scripts_bundle_method == "copy":
+        try:
+            shutil.copytree(SOURCE["redscript"], TARGET["redscript"])
+            print("done!", flush=True)
+        except PermissionError:
+            raise PermissionError(
+                f"Permission denied when trying to copy: {SOURCE['redscript']}"
+            )
+        except OSError as e:
+            raise OSError(f"Failed to copy file {SOURCE['redscript']}: {e}")
+        except Exception as e:
+            raise e
+        finally:
+            return
 
     try:
         proc = sp.Popen(
@@ -220,11 +237,11 @@ def scripts_bundle():
         print("done!", flush=True)
     except Exception as e:
         raise e
+    finally:
+        return
 
-    return
 
-
-def pack_mod():
+def pack_mod(clear_r6_output_after_pack: bool = True):
     print("Mod packing started!", flush=True)
 
     try:
@@ -263,6 +280,16 @@ def pack_mod():
                     relPath = os.path.relpath(filePath, STAGE)
                     zipFile.write(filePath, relPath)
 
+        if clear_r6_output_after_pack and os.path.exists(TARGET["redscript"]):
+            try:
+                shutil.rmtree(TARGET["redscript"])
+            except PermissionError:
+                raise PermissionError(f"Permission denied when trying to remove: {TARGET["redscript"]}")
+            except OSError as e:
+                raise OSError(f"Failed to remove file {TARGET["redscript"]}: {e}")
+            except Exception as e:
+                raise e
+        
         print("done!", flush=True)
     except Exception as e:
         raise e
