@@ -1,14 +1,25 @@
-# [CP77 Mod] AIO Multiplier
+<div align="center">
 
-Updated to game v2.3
+# CP77 - AIO Multiplier
+
+</div>
+
+<div style="display: flex; flex-direction: row; align-items: center; justify-content: end;">
+
+<div style="flex: 1;">
+
+> [!TIP]The best multiplier mod is now updated for version 2.13 of the game 🥳
+> <small>Compatible with version 2.12 for non-steam 👀</small>
+
+</div>
 
 [![Support Me on Ko-fi](https://i.imgur.com/7Cm07AZ.png)](https://ko-fi.com/siriusbeck)
-<br>
+
+</div>
 
 - [Description](#description)
 - [Features](#features)
 - [Available languages](#available-languages)
-- [Files tab](#files-tab)
 - [Installation](#installation)
 - [Links](#links)
 
@@ -18,8 +29,9 @@ The AIO Multiplier makes it possible to customize the game's multipliers, among 
 
 ## Features
 
+- Attributes:
+  - Reset attributes alays available for free
 - Development points:
-  - No respec cost
   - Attribute points per level
   - Perk points per level
 - Multipliers:
@@ -34,25 +46,18 @@ The AIO Multiplier makes it possible to customize the game's multipliers, among 
 - English
 - Traditional Chinese (Translated by [hansdofer](https://www.nexusmods.com/users/1887937))
 - German (Translated by [Thomas9922](https://www.nexusmods.com/users/4269775))<br>
-(If you want to translate the mod to your language, I left a tutorial available on the mod's wiki on GitHub: [AIO Multiplier -Wiki](https://github.com/pySiriusDev/CP77-AIO-Multiplier/wiki/How-to-translate-this-mod))
 
-## Files tab
-
-- **AIO Multiplier 2077 (main  file):** Main file of the mod, the maximum value of each multiplier is **100**. You just need it for everything to go smoothly (along with the requirements, obviously).
-- **High Multipliers Menu (optional file):** For those who, for some reason, don't think the maximum of 100 for the multipliers is enough, this file increases the maximum value of the ModSettings multiplier options to **500**. Install the main file first and then this one.
-- **Low Multipliers Menu (optional file):** And for those who think 100 is too high, this file lowers the maximum value of each multiplier to **50**. Install the main file first and then this one.
+> [!NOTE] Want to translate the mod into your language?
+> See more at **[wiki](wiki/How-to-translate-this-mod)**
 
 ## Installation
 
 **[DOWNLOAD AT NEXUSMODS](https://www.nexusmods.com/cyberpunk2077/mods/6325)**<br>
 
 - ****Main File:**** Just extract the main file to the Cyberpunk 2077 root folder, or use [Vortex](https://www.nexusmods.com/site/mods/1?tab=files) (Recommended) for an automatic installation.
-- ****Optional Files:**** Just extract the main file to the Cyberpunk 2077 root folder and replace the previously installed main file, or use [Vortex](https://www.nexusmods.com/site/mods/1?tab=files) (Recommended) for an automatic installation and, when informed about the conflict between files in Vortex, just select the optional file as **`After`**. Install only ONE OF THE OPTIONAL FILES.
+- ****Optional Files (if available):**** Just extract the main file to the Cyberpunk 2077 root folder and replace the previously installed main file, or use [Vortex](https://www.nexusmods.com/site/mods/1?tab=files) (Recommended) for an automatic installation and, when informed about the conflict between files in Vortex, just select the optional file as **`After`**. Install only ONE OF THE OPTIONAL FILES.
 
 ## Links
 
-- **[Modding Community](https://discord.gg/2YaYhgqHva)**
-- **[Discord Server](https://discord.gg/pVKQ7vzmKE)**
-- **[Instagram](https://instagram.com/biellviana)**
-- **[Twitter](https://twitter.com/_katiorro)**
-- **[NexusMods's Profile](https://www.nexusmods.com/users/73453593)**
+- **[NexusMods's Profile](https://next.nexusmods.com/profile/SiiriusBeck)**
+- **[Modding Community](https://discord.gg/redmodding)**
