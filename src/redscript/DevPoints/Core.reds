@@ -1,6 +1,16 @@
 module AIOMultiplier.DevPoints
 
 public class AIODevPoints {
+    private func SetNewRespecCost(cost: Int32) -> Int32 {
+        let settings = new AIODevPointsSettings();
+
+        if settings.noRespecCost {
+            cost = 0;
+        }
+
+        return cost;
+    }
+
     private func SetNewValue(
         oldValue: Int32,
         proficiencyType: gamedataProficiencyType,
