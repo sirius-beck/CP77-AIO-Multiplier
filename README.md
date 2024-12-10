@@ -38,7 +38,7 @@ The AIO Multiplier makes it possible to customize the game's multipliers, among 
 
 > [!NOTE]
 > *Want to translate the mod into your language?*<br />
-> *See more at [wiki](https://github.com/sirius-beck/CP77-AIO-Multiplier/wiki/How-to-translate-this-mod)*
+> *See more at [wiki (soon)](https://github.com/sirius-beck/CP77-AIO-Multiplier/wiki)*
 
 ## Installation
 
