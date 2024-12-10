@@ -18,293 +18,313 @@
                     "entries": [
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-mod-name",
+                            "secondaryKey": "AIO-ModSettings-ModName",
                             "femaleVariant": "AIO Multiplier"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-category-NotificationSystem",
+                            "secondaryKey": "AIO-ModSettings-Category-Attributes",
+                            "femaleVariant": "Atributos"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-ResetAttributesAlwaysEnabled",
+                            "femaleVariant": "\"Resetar Atributos\" Sempre Disponível"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "AIO-ModSettings-Description-ResetAttributesAlwaysEnabled",
+                            "femaleVariant": "Faz com que o botão \"Resetar Atributos\" esteja sempre disponível."
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "AIO-ModSettings-Category-NotificationSystem",
                             "femaleVariant": "Notificações"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-EnableNotificationSystem",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-EnableNotificationSystem",
                             "femaleVariant": "Habilitar"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-EnableNotificationSystem",
+                            "secondaryKey": "AIO-ModSettings-Description-EnableNotificationSystem",
                             "femaleVariant": "Habilita/desabilita as notificações de recompensas do mod."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-NotificationSystemDuration",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-NotificationSystemDuration",
                             "femaleVariant": "Duração"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-NotificationSystemDuration",
+                            "secondaryKey": "AIO-ModSettings-Description-NotificationSystemDuration",
                             "femaleVariant": "Tempo que cada notificação leverá para desaparecer da tela."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-category-DevPoints",
+                            "secondaryKey": "AIO-ModSettings-Category-DevPoints",
                             "femaleVariant": "Pontos de Desenvolvimento"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-NoRespecCost",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-NoRespecCost",
                             "femaleVariant": "Sem Custo de Respeito"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-NoRespecCost",
+                            "secondaryKey": "AIO-ModSettings-Description-NoRespecCost",
                             "femaleVariant": "Não haverá custo para redefinir os pontos de desenvolvimento."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-EnableDevPointsPerLevel",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-EnableDevPointsPerLevel",
                             "femaleVariant": "Habilitar Pontos de Desenvolvimento Por Level"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-EnableDevPointsPerLevel",
+                            "secondaryKey": "AIO-ModSettings-Description-EnableDevPointsPerLevel",
                             "femaleVariant": "Habilita/Desabilita as duas próximas opções.\n(Pontos de Atributo Por Level & Pontos de Vantagem Por Level)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-AttributePointsPerLevel",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-AttributePointsPerLevel",
                             "femaleVariant": "Pontos de Atributo Por Level"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-AttributePointsPerLevel",
+                            "secondaryKey": "AIO-ModSettings-Description-AttributePointsPerLevel",
                             "femaleVariant": "Quantidade de pontos de atributo que o jogador ganhará por level."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-PerkPointsPerLevel",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-PerkPointsPerLevel",
                             "femaleVariant": "Pontos de Vantagem Por Level"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-PerkPointsPerLevel",
+                            "secondaryKey": "AIO-ModSettings-Description-PerkPointsPerLevel",
                             "femaleVariant": "Quantidade de pontos de vantagem que o jogador ganhará por level."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-EnablePerkPointsOnSkillLevelUp",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-EnablePerkPointsOnSkillLevelUp",
                             "femaleVariant": "Habilitar Pontos de Vantagem Extras"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-EnablePerkPointsOnSkillLevelUp",
+                            "secondaryKey": "AIO-ModSettings-Description-EnablePerkPointsOnSkillLevelUp",
                             "femaleVariant": "Habilita/Desabilita os pontos extras de vantagem."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-PerkPointsOnSkillLevelUp",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-PerkPointsOnSkillLevelUp",
                             "femaleVariant": "Pontos de Vantagem Extras"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-PerkPointsOnSkillLevelUp",
+                            "secondaryKey": "AIO-ModSettings-Description-PerkPointsOnSkillLevelUp",
                             "femaleVariant": "Em determinados níveis de skill, o jogo te dá +1 ponto de vantagem, este campo altera este valor."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-category-itemsMult",
+                            "secondaryKey": "AIO-ModSettings-Category-itemsMult",
                             "femaleVariant": "Multiplicador de Itens"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-moneyMult",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-moneyMult",
                             "femaleVariant": "Edinhos"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-moneyMult",
+                            "secondaryKey": "AIO-ModSettings-Description-moneyMult",
                             "femaleVariant": "Os edinhos ganhos serão multiplicados pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-disassembledMult",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-disassembledMult",
                             "femaleVariant": "Itens Desmontados"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-disassembledMult",
+                            "secondaryKey": "AIO-ModSettings-Description-disassembledMult",
                             "femaleVariant": "Os itens desmontados ganhos serão multiplicados pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-category-playerExperience",
+                            "secondaryKey": "AIO-ModSettings-Category-playerExperience",
                             "femaleVariant": "Multiplicador de Experiência - Jogador"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multLevel",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multLevel",
                             "femaleVariant": "Level"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multLevel",
+                            "secondaryKey": "AIO-ModSettings-Description-multLevel",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multStreetCred",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multStreetCred",
                             "femaleVariant": "Credibilidade"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multStreetCred",
+                            "secondaryKey": "AIO-ModSettings-Description-multStreetCred",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-category-skillsExperience",
+                            "secondaryKey": "AIO-ModSettings-Category-skillsExperience",
                             "femaleVariant": "Multiplicador de Experiência - Habilidades"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-useFlexXP",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-useFlexXP",
                             "femaleVariant": "Usar Flex XP"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-useFlexXP",
+                            "secondaryKey": "AIO-ModSettings-Description-useFlexXP",
                             "femaleVariant": "A experiência adquirida para todas as skills do jogador compartilharão o mesmo multiplicador."
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multFlex",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multFlex",
                             "femaleVariant": "Multiplicador Flex"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multFlex",
+                            "secondaryKey": "AIO-ModSettings-Description-multFlex",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multAssault",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multAssault",
                             "femaleVariant": "Assalto"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multAssault",
+                            "secondaryKey": "AIO-ModSettings-Description-multAssault",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multAthletics",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multAthletics",
                             "femaleVariant": "Atletismo"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multAthletics",
+                            "secondaryKey": "AIO-ModSettings-Description-multAthletics",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multBrawling",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multBrawling",
                             "femaleVariant": "Briguento"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multBrawling",
+                            "secondaryKey": "AIO-ModSettings-Description-multBrawling",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multColdBlood",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multColdBlood",
                             "femaleVariant": "Sangue-Frio"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multColdBlood",
+                            "secondaryKey": "AIO-ModSettings-Description-multColdBlood",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multCombatHacking",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multCombatHacking",
                             "femaleVariant": "Hack Rápido"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multCombatHacking",
+                            "secondaryKey": "AIO-ModSettings-Description-multCombatHacking",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multCrafting",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multCrafting",
                             "femaleVariant": "Arte"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multCrafting",
+                            "secondaryKey": "AIO-ModSettings-Description-multCrafting",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multDemolition",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multDemolition",
                             "femaleVariant": "Aniquilação"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multDemolition",
+                            "secondaryKey": "AIO-ModSettings-Description-multDemolition",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multEngineering",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multEngineering",
                             "femaleVariant": "Engenharia"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multEngineering",
+                            "secondaryKey": "AIO-ModSettings-Description-multEngineering",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multGunslinger",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multGunslinger",
                             "femaleVariant": "Pistolas"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multGunslinger",
+                            "secondaryKey": "AIO-ModSettings-Description-multGunslinger",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multHacking",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multHacking",
                             "femaleVariant": "Protocolo de Invasão"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multHacking",
+                            "secondaryKey": "AIO-ModSettings-Description-multHacking",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multKenjutsu",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multKenjutsu",
                             "femaleVariant": "Lâminas"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multKenjutsu",
+                            "secondaryKey": "AIO-ModSettings-Description-multKenjutsu",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-displayName-multStealth",
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multStealth",
                             "femaleVariant": "Ninjutsu"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-SETTINGS-desc-multStealth",
+                            "secondaryKey": "AIO-ModSettings-Description-multStealth",
                             "femaleVariant": "A experiência adquirida será multiplicada pelo valor deste campo.\n(Para desativar, deixe o valor em: 1)"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "secondaryKey": "AIO-UI-Menus-Perks-ResetAttributesConfirmation",
+                            "femaleVariant": "Continuar para restaurar todos os pontos de atributos gastos?"
                         }
                     ]
                 }
