@@ -71,6 +71,7 @@ protected cb func OnResetAttributesButtonClick(evt: ref<inkPointerEvent>) -> Boo
             this.QueueEvent(vendorNotification);
         } else {
             let resetAttributeDisabledVisibility = false;
+            let resetAttributesConfirmationMsg = "Continue to restore all your spent attribute points?";
             let aioAttributesSettings = this.GetAIOAttributesSettings();
 
             if aioAttributesSettings.resetAttributesAlwaysEnabled {
@@ -116,7 +117,7 @@ protected cb func OnResetAttributesButtonClick(evt: ref<inkPointerEvent>) -> Boo
                     .Show(
                         this,
                         "UI-Menus-Perks-ResetAttributes",
-                        "AIO-UI-Menus-Perks-ResetAttributesConfirmation",
+                        resetAttributesConfirmationMsg,
                         GenericMessageNotificationType.YesNo
                     );
                 this

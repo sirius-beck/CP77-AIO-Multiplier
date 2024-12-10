@@ -12,17 +12,6 @@ private const func GetAIODevPointsInstance() -> ref<AIODevPoints> {
     return this.aioDevPoints;
 }
 
-// @replaceMethod(PlayerDevelopmentData)
-// public const final func GetTotalRespecCost() -> Int32 {
-//     let basePrice: Int32 = Cast<Int32>(TweakDBInterface.GetConstantStatModifierRecord(t"Price.RespecBase").Value());
-//     let singlePerkPrice: Int32 = Cast<Int32>(
-//         TweakDBInterface.GetConstantStatModifierRecord(t"Price.RespecSinglePerk").Value()
-//     );
-//     let cost: Int32 = basePrice + singlePerkPrice * (this.GetSpentPerkPoints() + this.GetSpentTraitPoints());
-//     let aioDevPoints: ref<AIODevPoints> = this.GetAIODevPointsInstance();
-//     cost = aioDevPoints.SetNewRespecCost(cost);
-//     return cost;
-// }
 @replaceMethod(PlayerDevelopmentData)
 public const final func ModifyDevPoints(type: gamedataProficiencyType, level: Int32) -> Void {
     let i: Int32;

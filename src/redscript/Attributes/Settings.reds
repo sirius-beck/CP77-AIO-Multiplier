@@ -1,6 +1,6 @@
 module AIOMultiplier._Attributes
 
-class AIOAttributesSettings {
+public class AIOAttributesSettings {
     @runtimeProperty("ModSettings.mod", "AIO-ModSettings-ModName")
     @runtimeProperty("ModSettings.category", "AIO-ModSettings-Category-Attributes")
     @runtimeProperty("ModSettings.displayName", "AIO-ModSettings-DisplayName-ResetAttributesAlwaysEnabled")

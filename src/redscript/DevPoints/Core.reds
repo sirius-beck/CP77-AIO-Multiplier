@@ -11,13 +11,6 @@ public class AIODevPoints {
         return this.settings;
     }
 
-    // private func SetNewRespecCost(cost: Int32) -> Int32 {
-    //     let settings = this.GetSettings();
-    //     if settings.noRespecCost {
-    //         cost = 0;
-    //     }
-    //     return cost;
-    // }
     private func SetNewValue(
         oldValue: Int32,
         proficiencyType: gamedataProficiencyType,

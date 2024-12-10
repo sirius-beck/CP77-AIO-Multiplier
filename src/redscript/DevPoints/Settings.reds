@@ -1,11 +1,6 @@
 module AIOMultiplier.DevPoints
 
-private class AIODevPointsSettings {
-    // @runtimeProperty("ModSettings.mod", "AIO-ModSettings-ModName")
-    // @runtimeProperty("ModSettings.category", "AIO-ModSettings-Category-DevPoints")
-    // @runtimeProperty("ModSettings.displayName", "AIO-ModSettings-DisplayName-NoRespecCost")
-    // @runtimeProperty("ModSettings.description", "AIO-ModSettings-Description-NoRespecCost")
-    // let noRespecCost: Bool = false;
+public class AIODevPointsSettings {
     @runtimeProperty("ModSettings.mod", "AIO-ModSettings-ModName")
     @runtimeProperty("ModSettings.category", "AIO-ModSettings-Category-DevPoints")
     @runtimeProperty("ModSettings.displayName", "AIO-ModSettings-DisplayName-EnableDevPointsPerLevel")
