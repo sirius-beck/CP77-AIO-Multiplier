@@ -21,406 +21,434 @@
                             "femaleVariant": "AIO倍數",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-mod-name"
+                            "secondaryKey": "AIO-ModSettings-ModName"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "femaleVariant": "屬性",
+                            "maleVariant": null,
+                            "primaryKey": 0,
+                            "secondaryKey": "AIO-ModSettings-Category-Attributes"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "femaleVariant": "“重置屬性”始終可用",
+                            "maleVariant": null,
+                            "primaryKey": 0,
+                            "secondaryKey": "AIO-ModSettings-DisplayName-ResetAttributesAlwaysEnabled"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "femaleVariant": "使“重置屬性”按鈕始終可用。",
+                            "maleVariant": null,
+                            "primaryKey": 0,
+                            "secondaryKey": "AIO-ModSettings-Description-ResetAttributesAlwaysEnabled"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "通知",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-category-NotificationSystem"
+                            "secondaryKey": "AIO-ModSettings-Category-NotificationSystem"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "開啟",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-EnableNotificationSystem"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-EnableNotificationSystem"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "「開啟/關閉」模組的獎勵通知。",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-EnableNotificationSystem"
+                            "secondaryKey": "AIO-ModSettings-Description-EnableNotificationSystem"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "持續時間",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-NotificationSystemDuration"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-NotificationSystemDuration"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "每個通知從螢幕上消失所需的時間。",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-NotificationSystemDuration"
+                            "secondaryKey": "AIO-ModSettings-Description-NotificationSystemDuration"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "成長點數",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-category-DevPoints"
+                            "secondaryKey": "AIO-ModSettings-Category-DevPoints"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "不涉及花費",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-NoRespecCost"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-NoRespecCost"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "重置成長點數將不會有任何花費。",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-NoRespecCost"
+                            "secondaryKey": "AIO-ModSettings-Description-NoRespecCost"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "開啟每個等級的成長點數。",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-EnableDevPointsPerLevel"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-EnableDevPointsPerLevel"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "「開啟/關閉」下面兩種選項。\n（每個等級的特質點數以及每個等級的專精點數）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-EnableDevPointsPerLevel"
+                            "secondaryKey": "AIO-ModSettings-Description-EnableDevPointsPerLevel"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "每個等級的特質點數",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-AttributePointsPerLevel"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-AttributePointsPerLevel"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "玩家每個等級將可獲得的特質點數。",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-AttributePointsPerLevel"
+                            "secondaryKey": "AIO-ModSettings-Description-AttributePointsPerLevel"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "每個等級的專精點數",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-PerkPointsPerLevel"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-PerkPointsPerLevel"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "玩家每個等級將可獲得的專精點數。",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-PerkPointsPerLevel"
+                            "secondaryKey": "AIO-ModSettings-Description-PerkPointsPerLevel"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "開啟額外的專精點數",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-EnablePerkPointsOnSkillLevelUp"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-EnablePerkPointsOnSkillLevelUp"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "「開啟/關閉」額外的專精點數。",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-EnablePerkPointsOnSkillLevelUp"
+                            "secondaryKey": "AIO-ModSettings-Description-EnablePerkPointsOnSkillLevelUp"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "額外的專精點數",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-PerkPointsOnSkillLevelUp"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-PerkPointsOnSkillLevelUp"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "在技能等級，遊戲會給予你+1的專精點數，以變更該數值為範疇。",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-PerkPointsOnSkillLevelUp"
+                            "secondaryKey": "AIO-ModSettings-Description-PerkPointsOnSkillLevelUp"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "物品倍數",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-category-itemsMult"
+                            "secondaryKey": "AIO-ModSettings-Category-itemsMult"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "歐元",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-moneyMult"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-moneyMult"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的歐元將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-moneyMult"
+                            "secondaryKey": "AIO-ModSettings-Description-moneyMult"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "拆解物品",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-disassembledMult"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-disassembledMult"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "拆解物品所獲得的將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-disassembledMult"
+                            "secondaryKey": "AIO-ModSettings-Description-disassembledMult"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "經驗值倍數 - 玩家",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-category-playerExperience"
+                            "secondaryKey": "AIO-ModSettings-Category-playerExperience"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "等級",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multLevel"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multLevel"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multLevel"
+                            "secondaryKey": "AIO-ModSettings-Description-multLevel"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "街頭聲譽",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multStreetCred"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multStreetCred"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的街頭聲譽將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multStreetCred"
+                            "secondaryKey": "AIO-ModSettings-Description-multStreetCred"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "經驗值倍數 - 技能",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-category-skillsExperience"
+                            "secondaryKey": "AIO-ModSettings-Category-skillsExperience"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "使用彈性 XP",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-useFlexXP"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-useFlexXP"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "所有玩家所獲得技能經驗值，將共享相同的倍數。",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-useFlexXP"
+                            "secondaryKey": "AIO-ModSettings-Description-useFlexXP"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "彈性倍數",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multFlex"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multFlex"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multFlex"
+                            "secondaryKey": "AIO-ModSettings-Description-multFlex"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "突擊",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multAssault"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multAssault"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multAssault"
+                            "secondaryKey": "AIO-ModSettings-Description-multAssault"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "運動好手",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multAthletics"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multAthletics"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multAthletics"
+                            "secondaryKey": "AIO-ModSettings-Description-multAthletics"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "幹架",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multBrawling"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multBrawling"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multBrawling"
+                            "secondaryKey": "AIO-ModSettings-Description-multBrawling"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "冷血",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multColdBlood"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multColdBlood"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multColdBlood"
+                            "secondaryKey": "AIO-ModSettings-Description-multColdBlood"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "速駭",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multCombatHacking"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multCombatHacking"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multCombatHacking"
+                            "secondaryKey": "AIO-ModSettings-Description-multCombatHacking"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "製作",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multCrafting"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multCrafting"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multCrafting"
+                            "secondaryKey": "AIO-ModSettings-Description-multCrafting"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "灰飛煙滅",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multDemolition"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multDemolition"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multDemolition"
+                            "secondaryKey": "AIO-ModSettings-Description-multDemolition"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "工程",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multEngineering"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multEngineering"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multEngineering"
+                            "secondaryKey": "AIO-ModSettings-Description-multEngineering"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "手槍",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multGunslinger"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multGunslinger"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multGunslinger"
+                            "secondaryKey": "AIO-ModSettings-Description-multGunslinger"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "破解協定",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multHacking"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multHacking"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multHacking"
+                            "secondaryKey": "AIO-ModSettings-Description-multHacking"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "刀劍",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multKenjutsu"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multKenjutsu"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multKenjutsu"
+                            "secondaryKey": "AIO-ModSettings-Description-multKenjutsu"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "忍術",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-displayName-multStealth"
+                            "secondaryKey": "AIO-ModSettings-DisplayName-multStealth"
                         },
                         {
                             "$type": "localizationPersistenceOnScreenEntry",
                             "femaleVariant": "獲得的經驗值將乘以該數值為範疇。\n（要關閉此項，請將數值保持在：1）",
                             "maleVariant": null,
                             "primaryKey": 0,
-                            "secondaryKey": "AIO-SETTINGS-desc-multStealth"
+                            "secondaryKey": "AIO-ModSettings-Description-multStealth"
+                        },
+                        {
+                            "$type": "localizationPersistenceOnScreenEntry",
+                            "femaleVariant": "繼續恢復消耗掉的所有屬性點？",
+                            "maleVariant": null,
+                            "primaryKey": 0,
+                            "secondaryKey": "AIO-UI-Menus-Perks-ResetAttributesConfirmation"
                         }
                     ]
                 }
