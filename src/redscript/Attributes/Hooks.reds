@@ -1,4 +1,4 @@
-module AIOMultiplier.Attributes
+module AIOMultiplier._Attributes
 
 @addField(NewPerksCategoriesGameController)
 private let aioAttributesSettings: ref<AIOAttributesSettings>;
