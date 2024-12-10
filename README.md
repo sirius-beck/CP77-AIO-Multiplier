@@ -1,21 +1,10 @@
-<div align="center">
-
 # CP77 - AIO Multiplier
 
-</div>
-
-<div style="display: flex; flex-direction: row; align-items: center; justify-content: end;">
-
-<div style="flex: 1;">
-
-> [!TIP]The best multiplier mod is now updated for version 2.13 of the game 🥳
-> <small>Compatible with version 2.12 for non-steam 👀</small>
-
-</div>
+> [!TIP]
+> *The best multiplier mod is now updated for version 2.13 of the game 🥳*<br />
+> *Compatible with version 2.12 for non-steam 👀*
 
 [![Support Me on Ko-fi](https://i.imgur.com/7Cm07AZ.png)](https://ko-fi.com/siriusbeck)
-
-</div>
 
 - [Description](#description)
 - [Features](#features)
@@ -47,8 +36,9 @@ The AIO Multiplier makes it possible to customize the game's multipliers, among 
 - Traditional Chinese (Translated by [hansdofer](https://www.nexusmods.com/users/1887937))
 - German (Translated by [Thomas9922](https://www.nexusmods.com/users/4269775))<br>
 
-> [!NOTE] Want to translate the mod into your language?
-> See more at **[wiki](wiki/How-to-translate-this-mod)**
+> [!NOTE]
+> *Want to translate the mod into your language?*<br />
+> *See more at [wiki](https://github.com/sirius-beck/CP77-AIO-Multiplier/wiki/How-to-translate-this-mod)*
 
 ## Installation
 
