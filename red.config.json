@@ -3,6 +3,7 @@
     "version": "5.0.0",
     "game": "G:\\Cyberpunk 2077",
     "stage": "out",
+    "watchTime": 1000,
     "scripts": {
         "redscript": {
             "src": "src/redscript",
