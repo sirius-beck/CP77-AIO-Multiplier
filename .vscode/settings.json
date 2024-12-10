@@ -1,5 +1,4 @@
 {
-    "commentTranslate.targetLanguage": "en",
     "cSpell.enabled": false,
     "json.schemas": [
         {
@@ -10,5 +9,5 @@
     "files.associations": {
         "*.xl": "yaml"
     },
-    "makefile.configureOnOpen": true
+    "makefile.configureOnOpen": false
 }
