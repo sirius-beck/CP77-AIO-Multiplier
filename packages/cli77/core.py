@@ -240,7 +240,17 @@ def pack_mod():
             raise ValueError(f"Invalid mod version: {VERSION}")
 
         outputName = f"{MOD_NAME}-{VERSION}.zip"
-        outputPath = Utils.normjoin(STAGE, outputName)
+        outputPath = Utils.normjoin(os.getcwd(), outputName)
+
+        if os.path.exists(outputPath):
+            try:
+                os.remove(outputPath)
+            except PermissionError:
+                raise PermissionError(f"Permission denied when trying to remove: {outputPath}")
+            except OSError as e:
+                raise OSError(f"Failed to remove file {outputPath}: {e}")
+            except Exception as e:
+                raise e
 
         print(f"Creating mod archive: {outputName}...", end=" ", flush=True)
 
