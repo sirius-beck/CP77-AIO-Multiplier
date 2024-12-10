@@ -6,11 +6,11 @@
     "scripts": {
         "redscript": {
             "src": "src/redscript",
-            "output": "r6/scripts/"
+            "output": "r6/scripts"
         }
     },
     "archives": {
-        "raw": "src/archives/archive",
+        "raw": "src/archives/raw",
         "archivexl": "src/archives/archive.xl"
     },
     "tools": {

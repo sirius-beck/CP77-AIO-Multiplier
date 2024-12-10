@@ -320,11 +320,6 @@
                             "$type": "localizationPersistenceOnScreenEntry",
                             "secondaryKey": "AIO-ModSettings-Description-multStealth",
                             "femaleVariant": "L'expérience gagné sera multiplié par cette valeur.\n(Pour le désactivé, laissez cette valeur a: 1)"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "secondaryKey": "AIO-UI-Menus-Perks-ResetAttributesConfirmation",
-                            "femaleVariant": "Continuer à restaurer tous vos points d'attribut dépensés?"
                         }
                     ]
                 }

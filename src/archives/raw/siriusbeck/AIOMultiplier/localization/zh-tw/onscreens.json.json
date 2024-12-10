@@ -442,13 +442,6 @@
                             "maleVariant": null,
                             "primaryKey": 0,
                             "secondaryKey": "AIO-ModSettings-Description-multStealth"
-                        },
-                        {
-                            "$type": "localizationPersistenceOnScreenEntry",
-                            "femaleVariant": "繼續恢復消耗掉的所有屬性點？",
-                            "maleVariant": null,
-                            "primaryKey": 0,
-                            "secondaryKey": "AIO-UI-Menus-Perks-ResetAttributesConfirmation"
                         }
                     ]
                 }
