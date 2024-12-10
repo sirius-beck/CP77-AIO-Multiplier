@@ -6,7 +6,7 @@ RED_CLI			= red
 
 
 .PHONY: default
-all: 
+default: 
 	@cls
 	@$(PYTHON) $(PYTHON_ARGS) $(CLI_TOOL) $(CLI_TOOL_ARGS)
 	@pwsh.exe -c "Remove-Item -Path .\out\r6 -Recurse -Force"
@@ -17,9 +17,3 @@ scripts:
 	@pwsh.exe -c "Remove-Item -Path .\out\*.zip -Force"
 	@$(RED_CLI) pack --no-clean
 	@pwsh.exe -c "Remove-Item -Path .\out\r6 -Recurse -Force"
-
-.PHONY: watch
-watch:
-	@cls
-	@$(RED_CLI) watch
-	@git checkout -- red.config.json
